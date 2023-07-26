@@ -25,7 +25,9 @@ target_url = "http://localhost:8000"
 driver.get(target_url)
 
 # folder_path = "/Users/zoungming/Desktop/Intern-IIS/CTI_Analysis/code/upload_file"
-folder_path = "/Users/zoungming/Desktop/Intern-IIS/CTI_Analysis/code_data/pdfs"
+# folder_path = "/Users/zoungming/Desktop/Intern-IIS/CTI_Analysis/code_data/pdfs"
+
+folder_path = "/Volumes/K16/CTI report/pdfs" # directly access the USB device
 
 # go through the folder that contains all the files(CTI report) we want to upload
 for file_name in os.listdir(folder_path):
