@@ -26,7 +26,6 @@ driver.get(target_url)
 
 # folder_path = "/Users/zoungming/Desktop/Intern-IIS/CTI_Analysis/code/upload_file"
 # folder_path = "/Users/zoungming/Desktop/Intern-IIS/CTI_Analysis/code_data/pdfs"
-
 folder_path = "/Volumes/K16/CTI report/pdfs" # directly access the USB device
 
 # go through the folder that contains all the files(CTI report) we want to upload
@@ -39,7 +38,7 @@ for file_name in os.listdir(folder_path):
     upload_file.send_keys(file_path)
        
     # wait 1 sec to ensure that the file has been uploaded
-    time.sleep(0.5)
+    time.sleep(1)
 
 while(True):
     time.sleep(1)

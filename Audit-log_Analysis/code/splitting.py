@@ -3,7 +3,7 @@ import random
 import os
 
 # 設定 JSONL 文件的路徑
-file_path = "processed_data.jsonl"  # 自行替換成你的 JSONL 文件路徑
+file_path = "../data_v2/processed_encoded_data.jsonl"  # 自行替換成你的 JSONL 文件路徑
 
 # 讀取 JSONL 文件中的所有圖形
 all_graphs = []
@@ -25,9 +25,9 @@ val_graphs = all_graphs[num_train:num_train + num_val]
 test_graphs = all_graphs[num_train + num_val:]
 
 
-train_file = "./data_v2/train.jsonl"
-val_file = "./data_v2/valid.jsonl"
-test_file = "./data_v2/test.jsonl"
+train_file = "../data_v2/encoded_train.jsonl"
+val_file = "../data_v2/encoded_valid.jsonl"
+test_file = "../data_v2/encoded_test.jsonl"
 
 with jsonlines.open(train_file, mode='w') as writer:
     for graph in train_graphs:

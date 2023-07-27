@@ -1,11 +1,9 @@
-import time
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import NoSuchElementException
-from selenium.common.exceptions import TimeoutException
-from selenium.webdriver.common.action_chains import ActionChains
+import time
 
 driver = webdriver.Chrome()
 driver.implicitly_wait(10)
@@ -31,19 +29,31 @@ driver.get(target_url)
 # wait for the web to load
 WebDriverWait(driver, 1).until(EC.presence_of_element_located((By.XPATH, '//strong')))
 
-# original version
+# 获取所有表格行
 table_rows = driver.find_elements(By.XPATH, '//tr')
 
-for row in table_rows[1:]:
-    
-    export_button = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, './/button[@id="export-dropdown"]')))
-    export_button.click()
+for i in range(1, len(table_rows)):
+    try:
+        row = table_rows[i]
 
-    export_json = row.find_element(By.XPATH, './/a[contains(@class, "dropdown-item") and contains(@href, "format=json")]')
-    export_json.click()
+        # 检查是否有"Error"按钮
+        error_button = row.find_element(By.XPATH, './/button[@class="btn btn-danger" and @disabled=""]')
 
+        # 使用JavaScript点击"Delete"按钮
+        delete_button = row.find_element(By.XPATH, './/a[@class="btn btn-danger btn-sm" and starts-with(@onclick, "deleteJob")]')
+        driver.execute_script("arguments[0].click();", delete_button)
 
-time.sleep(5)
+        # 等待一段时间，以确保操作成功
+        time.sleep(1)
 
-while True:
-    time.sleep(1)
+        # 刷新页面，重新获取表格的所有行
+        driver.refresh()
+        table_rows = driver.find_elements(By.XPATH, '//tr')
+
+    except NoSuchElementException:
+        # 如果找不到"error_button"元素，跳过该行的处理，继续处理下一行
+        driver.quit()
+        # continue
+
+# 关闭浏览器
+# driver.quit()
