@@ -35,11 +35,12 @@ WebDriverWait(driver, 1).until(EC.presence_of_element_located((By.XPATH, '//stro
 table_rows = driver.find_elements(By.XPATH, '//tr')
 
 for row in table_rows[1:]:
-    
+
     export_button = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, './/button[@id="export-dropdown"]')))
     export_button.click()
 
-    export_json = row.find_element(By.XPATH, './/a[contains(@class, "dropdown-item") and contains(@href, "format=json")]')
+    # export_json = row.find_element(By.XPATH, './/a[contains(@class, "dropdown-item") and contains(@href, "format=json")]')
+    WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, './/a[contains(@class, "dropdown-item") and contains(@href, "format=json")]')))
     export_json.click()
 
 
