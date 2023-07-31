@@ -14,7 +14,8 @@ def read_data(file_path):
 
         for line in file:
             source, src_entity, destination, dest_entity, relation, label = line.strip().split(' ')
-            # if label == '0': continue
+            # Since we care about benign, just ignore the T1005 and T1046
+            if label.startswith('T1005') or label.startswith('T1046'): continue
             edges.append((source, src_entity, destination, dest_entity, relation, label))
             
     # edges is a list contains all the information (each set is stored in a tuple)
