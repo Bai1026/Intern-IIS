@@ -1,9 +1,12 @@
 import time
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+from selenium.webdriver import ActionChains
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import NoSuchElementException
+from selenium.common.exceptions import StaleElementReferenceException
+from selenium.common.exceptions import ElementClickInterceptedException
 
 
 driver = webdriver.Chrome()
@@ -30,26 +33,82 @@ driver.get(target_url)
 # wait for the web to load
 WebDriverWait(driver, 1).until(EC.presence_of_element_located((By.XPATH, '//strong')))
 
-# ... (之前的代码)
+# table_rows = driver.find_elements(By.XPATH, '//tr')
 
-table_rows = driver.find_elements(By.XPATH, '//tr')
+window_height = driver.execute_script("return window.innerHeight")
+actions = ActionChains(driver)
+count = 0 
 
-for i in range(1, len(table_rows)):
-    row = table_rows[i]
-    export_button = row.find_elements(By.XPATH, './/button[@id="export-dropdown"]')
+while True:
+    table_rows = driver.find_elements(By.XPATH, '//tr')
+    if count >= len(table_rows):
+        break
+    
+    try:
+        row = table_rows[i]
+        export_button = row.find_elements(By.XPATH, './/button[@id="export-dropdown"]')
+        # ...
+    except StaleElementReferenceException:
+        table_rows = driver.find_elements(By.XPATH, '//tr')
+        row = table_rows[i]
+        export_button = row.find_elements(By.XPATH, './/button[@id="export-dropdown"]')
+    
+    # 確認該元素已經在視窗內且可以點擊
+    WebDriverWait(driver, 10).until(EC.visibility_of(export_button[0]))
+    # export_button[0].click()
+    try:
+        export_button[0].click()
+    except ElementClickInterceptedException:
+        actions.move_to_element(export_button[0]).perform()
+        export_button[0].click()
 
-    # 如果"Export"按钮不存在，或者发生异常，则跳过该行，继续处理下一行
-    if not export_button:
-        continue
-
-    # 点击"Export"按钮并处理导出选项
-    export_button[0].click()
-
-    # 等待"export_json"链接可点击
     export_json = WebDriverWait(row, 10).until(EC.element_to_be_clickable((By.XPATH, './/a[contains(@class, "dropdown-item") and contains(@href, "format=json")]')))
     export_json.click()
 
-    # 添加一些延迟以等待导出完成
-    time.sleep(5)
+    count += 1
+    print(count)
 
-# ... (其余的代码)
+    if count % 6 == 0:
+        # 滾動一整個視窗的大小
+        driver.execute_script(f"window.scrollBy(0, {window_height});")
+        time.sleep(5)
+
+    # row = table_rows[count]
+    # export_button = row.find_elements(By.XPATH, './/button[@id="export-dropdown"]')
+
+
+# for i in range(1, len(table_rows)):
+#     # row = table_rows[i]
+
+#     # export_button = row.find_elements(By.XPATH, './/button[@id="export-dropdown"]')
+#     try:
+#         row = table_rows[i]
+#         export_button = row.find_elements(By.XPATH, './/button[@id="export-dropdown"]')
+#         # ...
+#     except StaleElementReferenceException:
+#         table_rows = driver.find_elements(By.XPATH, '//tr')
+#         row = table_rows[i]
+#         export_button = row.find_elements(By.XPATH, './/button[@id="export-dropdown"]')
+#         # ...
+
+#     # 確認該元素已經在視窗內且可以點擊
+#     WebDriverWait(driver, 10).until(EC.visibility_of(export_button[0]))
+#     # export_button[0].click()
+#     try:
+#         export_button[0].click()
+#     except ElementClickInterceptedException:
+#         actions.move_to_element(export_button[0]).perform()
+#         export_button[0].click()
+
+#     export_json = WebDriverWait(row, 10).until(EC.element_to_be_clickable((By.XPATH, './/a[contains(@class, "dropdown-item") and contains(@href, "format=json")]')))
+#     export_json.click()
+
+#     count += 1
+#     print(count)
+
+#     if count % 6 == 0:
+#         # 滾動一整個視窗的大小
+#         driver.execute_script(f"window.scrollBy(0, {window_height});")
+#         time.sleep(5)
+
+

@@ -1,11 +1,11 @@
 import os
 
-input_file_path = "without_APs_new.txt"
+input_file_path = '../data_new_entity/combined_file_new.txt'
 
 with open(input_file_path, 'r') as input_file:
     output = []
     file_name, file_extension = os.path.splitext(input_file_path)
-    output_file_path = f"{file_name}_new2{file_extension}"
+    output_file_path = f"{file_name}2{file_extension}"
 
     lines = input_file.readlines()[1:]  # 忽略第一行
     for line in lines:

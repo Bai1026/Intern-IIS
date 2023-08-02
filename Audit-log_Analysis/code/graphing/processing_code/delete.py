@@ -1,9 +1,11 @@
 import os
 import csv
 
-input_file_paths = ["../data_with_entity/without_APs.txt", 
-                    "../data_with_entity/without_APs_benign.txt", 
-                    "../data_with_entity/without_benign.txt"]  # 將輸入文件路徑列表進行替換
+# input_file_paths = ["../data_with_entity/without_APs.txt", 
+#                     "../data_with_entity/without_APs_benign.txt", 
+#                     "../data_with_entity/without_benign.txt"]  # 將輸入文件路徑列表進行替換
+
+input_file_paths = ["../data_new_entity/combined_file.txt"]
 
 for input_file_path in input_file_paths:
     # 获取文件名和扩展名
@@ -17,7 +19,7 @@ for input_file_path in input_file_paths:
         writer = csv.writer(outfile, delimiter=' ')
 
         # Optional: Write header to the output file
-        writer.writerow(["src", "dest", "rel", "label"])
+        # writer.writerow(["src", "dest", "rel", "label"])
 
         for row in reader:
             # Skip rows that don't have the expected number of columns

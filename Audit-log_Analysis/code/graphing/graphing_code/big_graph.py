@@ -38,8 +38,8 @@ def draw_big_graph(edges, file_name, figsize=(120, 48), dpi=200):
 
     pos = graphviz_layout(G, prog="dot")
     plt.figure(figsize=figsize)
-    nx.draw_networkx_edges(G, pos)
-    # nx.draw_networkx_labels(G, pos, font_size=8, font_color='black')
+    # nx.draw_networkx_edges(G, pos)
+    nx.draw_networkx_labels(G, pos, font_size=8, font_color='black')
 
     # edge_labels = {(source, destination): f"({len(relations.split(','))})" for (source, destination), relations in edge_labels.items()}
     # nx.draw_networkx_edge_labels(G, pos)
@@ -56,6 +56,6 @@ def draw_big_graph(edges, file_name, figsize=(120, 48), dpi=200):
 file_path = "../data_new_entity/combined_file_with_entity.txt"
 full_edges = read_data(file_path)
 
-draw_big_graph(full_edges, "big_graph")
+draw_big_graph(full_edges, "big_graph_2")
 
 print("DONE!!")
