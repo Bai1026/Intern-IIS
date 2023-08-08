@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/zoungming/Desktop/Intern-IIS/CTI_Analysis/code",
+      "program": "/Users/zoungming/Desktop/Intern-IIS/CTI_Analysis/code/build/Debug/outDebug"
+    }
+  ]
+}

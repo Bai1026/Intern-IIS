@@ -65,7 +65,7 @@ for i in range(1, len(table_rows)):
             continue
 
     count += 1
-    print(count)
+    print(f"This is the {count}-th exported files")
 
     # click 3 times and then scroll one third of the window
     if count % 3 == 0:
