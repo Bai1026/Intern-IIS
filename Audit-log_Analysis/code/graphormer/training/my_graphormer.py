@@ -2,7 +2,6 @@ import os
 from tqdm import tqdm
 from datasets import load_dataset
 from sklearn.metrics import accuracy_score
-# from torch import torch.optim.AdamW
 from torch.optim import AdamW
 from transformers import get_linear_schedule_with_warmup
 from transformers import Trainer, TrainingArguments, TrainerCallback, EvalPrediction, GraphormerForGraphClassification
@@ -19,9 +18,10 @@ def compute_accuracy(p: EvalPrediction):
     return {"accuracy": accuracy_score(p.label_ids, preds)}
 
 
-CUDA_VISIBLE_DEVICES = "0,1,2"
-os.environ['CUDA_LAUNCH_BLOCKING'] = "1"
- 
+# CUDA_VISIBLE_DEVICES = "0,1,2"
+# os.environ['CUDA_LAUNCH_BLOCKING'] = "1"
+
+
 dataset = load_dataset("VincentPai/encoded-MITRE-small")
 dataset = dataset.shuffle(seed = 87)
 dataset_processed = dataset.map(preprocess_item, batched=False)
@@ -35,13 +35,13 @@ model_checkpoint = "clefourrier/graphormer-base-pcqm4mv2" # pre-trained model fr
 
 model = GraphormerForGraphClassification.from_pretrained(
     model_checkpoint, 
-
     # We have 167 attack patterns and 1 benign
     num_classes=168, 
-
-    # provide this in case you're planning to fine-tune an already fine-tuned checkpoint
+    # provide this in case you're planning to fine-tune
+    # an already fine-tuned checkpoint
     ignore_mismatched_sizes = True, 
 )
+
 
 training_args = TrainingArguments(
     "graph-classification",
@@ -50,17 +50,16 @@ training_args = TrainingArguments(
     per_device_train_batch_size=16,
     per_device_eval_batch_size=16,
 
-    auto_find_batch_size=True, # batch size can be changed automatically to prevent OOMs
+    # batch size changed automatically to prevent OOMs
+    auto_find_batch_size=True, 
     gradient_accumulation_steps=10,
     dataloader_num_workers=4, 
-
     num_train_epochs=5,
 
     evaluation_strategy="epoch",
     logging_strategy="epoch",
     push_to_hub=False,
-
-    disable_tqdm=False,  # show the tqdm bar
+    disable_tqdm=False,
 )
 
 # 你需要定义一些参数
@@ -70,20 +69,16 @@ num_warmup_steps = num_training_steps // 10
 optimizer = AdamW(model.parameters(), lr=5e-5)
 scheduler = get_linear_schedule_with_warmup(optimizer, num_warmup_steps, num_training_steps)
 
+
 trainer = Trainer(
     model=model,
     args=training_args,
     train_dataset=train_ds,
     eval_dataset=val_ds,
-
-    # data collator is important in our task
     data_collator=GraphormerDataCollator(),
-
-    # is_model_parallel= True, # set teh model splitting the tasks on the
     callbacks=[PrintInfoCallback()],
     compute_metrics=compute_accuracy,
     optimizers=(optimizer, scheduler),
-    
 )
 
 '''
@@ -99,4 +94,3 @@ trainer.save_model()
 trainer.log_metrics("train", train_results.metrics)
 trainer.save_metrics("train", train_results.metrics)
 trainer.save_state()
-

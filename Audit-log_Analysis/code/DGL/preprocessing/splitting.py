@@ -3,7 +3,7 @@ import random
 import os
 
 # 設定 JSONL 文件的路徑
-file_path = "../data/embedded_transformed_data_v2.jsonl"  # 自行替換成你的 JSONL 文件路徑
+file_path = "../data/training_data/repeated_embedded_merged_data.jsonl"  # 自行替換成你的 JSONL 文件路徑
 
 # 讀取 JSONL 文件中的所有圖形
 all_graphs = []
@@ -25,9 +25,9 @@ val_graphs = all_graphs[num_train:num_train + num_val]
 test_graphs = all_graphs[num_train + num_val:]
 
 
-train_file = "../data_v2/remaining_train.jsonl"
-val_file = "../data_v2/remaining_valid.jsonl"
-test_file = "../data_v2/remaining_test.jsonl"
+train_file = "../data/training_data/repeated_train.jsonl"
+val_file = "../data/training_data/repeated_valid.jsonl"
+test_file = "../data/training_data/repeated_test.jsonl"
 
 with jsonlines.open(train_file, mode='w') as writer:
     for graph in train_graphs:
