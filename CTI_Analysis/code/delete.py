@@ -22,6 +22,7 @@ password_input.send_keys("LEGITPassword1234")
 sign_in_button = driver.find_element(By.XPATH, "//button[@type='submit']")
 sign_in_button.click()
 
+
 # ==================== After "Sign In" we do =======================================
 target_url = "http://localhost:8000"
 driver.get(target_url)
