@@ -1,9 +1,10 @@
 import jsonlines
-import random
-import os
+# import random
+# import os
 
 # 設定 JSONL 文件的路徑
-file_path = "../data/training_data/repeated_embedded_merged_data.jsonl"  # 自行替換成你的 JSONL 文件路徑
+# file_path = "../data/training_data/repeated_embedded_merged_data.jsonl" 
+file_path = "../data/test/repeated_500times.jsonl"
 
 # 讀取 JSONL 文件中的所有圖形
 all_graphs = []
@@ -12,7 +13,7 @@ with jsonlines.open(file_path) as reader:
         all_graphs.append(item)
 
 # 打亂數據集順序
-random.shuffle(all_graphs)
+# random.shuffle(all_graphs)
 
 num_samples = len(all_graphs)
 num_train = int(0.6 * num_samples)  # 60% 訓練集
@@ -25,9 +26,12 @@ val_graphs = all_graphs[num_train:num_train + num_val]
 test_graphs = all_graphs[num_train + num_val:]
 
 
-train_file = "../data/training_data/repeated_train.jsonl"
-val_file = "../data/training_data/repeated_valid.jsonl"
-test_file = "../data/training_data/repeated_test.jsonl"
+# train_file = "../data/training_data/repeated_train.jsonl"
+# val_file = "../data/training_data/repeated_valid.jsonl"
+# test_file = "../data/training_data/repeated_test.jsonl"
+train_file = "../data/test/repeated_train.jsonl"
+val_file = "../data/test/repeated_valid.jsonl"
+test_file = "../data/test/repeated_test.jsonl"
 
 with jsonlines.open(train_file, mode='w') as writer:
     for graph in train_graphs:
