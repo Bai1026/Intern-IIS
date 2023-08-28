@@ -1,0 +1,101 @@
+Text,Attack ID
+" Anomali
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+BlogCollaborateSupportSchedule DemoDiscoverProductsMarketplaceResourcesPartnersCompanyAugust 9, 2020Anomali Threat Research Releases First Public Analysis of Smaug Ransomware as a Service<p><em>Authored by: Joakim Kennedy and Rory Gould</em></p> <p>Anomali ThreatStream customers can find Indicators of Compromise (IOCs), signatures, and <a href=""https://ui.threatstream.com/tip/942687"" target=""_blank"">more information about this threat here</a>.</p> <h2>Introduction</h2> <p>Threat actors and cybercriminals that don’t have the ability to develop their own ransomware for malicious campaigns can turn to the Smaug Ransomware as a Service (RaaS) offering, which is available via a Dark Web Onion site.",T1543
+"The post also directed users as to how they could avail of the service: contacting smaug-ransomware@protonmail.com with a registration fee of 0.2 BTC (appx $1,900 (USD) at time of posting) and subsequent service fees of 20%.",T1543
+"There has been no subsequent activity from <strong>corinda</strong> and the profile has not been active since June 6.</p> <p style=""text-align: center;""><em><strong><img alt=""Initial Smaug offering on Exploit.in"" src=""{assets_3962:https://www.anomali.com/images/uploads/blog/initial-smaug-offering.png}"" />Figure 1 </strong>- Initial Smaug offering on Exploit.in</em></p> <h3>Account History</h3> <p><strong>Corinda’s</strong> Exploit account was created on May 17, 2019 as a paid registration (paid registrations are completely anonymous and do not link to other accounts on ‘friendly forums’), and remained dormant until Oct. 2019.",T1068
+"Do not be shy’</em></p> <p>These posts were recovered through Sixgill as the original topic has since been deleted and is no longer available on the forum.</p> <h2>Smaug Panel</h2> <p>Smaug developers shared screenshots of the product on their Onion site, it offers some insight as to how the product is to be used.</p> <h3>Registration</h3> <p>The site offers a registration form replete with captcha.",T1070.004
+"A ‘Regular’ campaign will necessitate a decryption key for every victim infected, while a ‘Company’ campaign will allow a single key to decrypt all computers affected by the campaign.</p> <p style=""text-align: center;""><em><strong><img alt=""Campaign creation"" src=""{assets_3964:https://www.anomali.com/images/uploads/blog/campaign-creation.png}"" /><br /> Figure 3</strong> - Campaign creation</em></p> <p>After the expiration date set by the user has passed, the campaign will expire and the victims can no longer recover their files.</p> <h4>Manage Campaign</h4> <p>With a campaign created, a user can download the relevant payload for the system(s) they are attempting to infect; Mac, Linux and Windows are all available.",T1573
+"The interface allows the user to track the campaign dates and profits they have accumulated.</p> <p style=""text-align: center;""><em><strong><img alt=""Campaign management"" src=""{assets_3965:https://www.anomali.com/images/uploads/blog/campaign-management.png}"" /><br /> Figure 4</strong> - Campaign management</em></p> <h3>Fund Withdrawal</h3> <p>Once a victim has paid the ransom, the user is able to navigate to the ‘Withdrawal’ page.",T1033
+"They also claim to take feature requests, they will create them for a fee or incorporate them for free if enough users request it.</p> <p style=""text-align: center;""><em><strong><img alt=""Support service"" src=""{assets_3968:https://www.anomali.com/images/uploads/blog/smaug-fund-overview.png}"" /><br /> Figure 6</strong> - Support service</em></p> <h3>Settings</h3> <p>The settings page is bare-boned and allows for users to change passwords.</p> <p style=""text-align: center;""><em><strong><img alt=""Settings page"" src=""{assets_3970:https://www.anomali.com/images/uploads/blog/settings-page.png}"" /><br /> Figure 7</strong> - Settings page</em></p> <h2>The Ransomware</h2> <p>The Smaug ransomware is written in Go (Golang).",T1071
+"They also claim to take feature requests, they will create them for a fee or incorporate them for free if enough users request it.</p> <p style=""text-align: center;""><em><strong><img alt=""Support service"" src=""{assets_3968:https://www.anomali.com/images/uploads/blog/smaug-fund-overview.png}"" /><br /> Figure 6</strong> - Support service</em></p> <h3>Settings</h3> <p>The settings page is bare-boned and allows for users to change passwords.</p> <p style=""text-align: center;""><em><strong><img alt=""Settings page"" src=""{assets_3970:https://www.anomali.com/images/uploads/blog/settings-page.png}"" /><br /> Figure 7</strong> - Settings page</em></p> <h2>The Ransomware</h2> <p>The Smaug ransomware is written in Go (Golang).",T1543
+The key is encrypted by the threat actor&#39;s RSA public key which means the machine key can only be encrypted by a threat actor&#39;s private key.,T1027
+The key is encrypted by the threat actor&#39;s RSA public key which means the machine key can only be encrypted by a threat actor&#39;s private key.,T1521
+"The ransomware is designed to run completely offline without the requirement of a network connection.</p> <p style=""text-align: center;""><em><strong><img alt=""Extracted source code structure from a malware sample"" src=""{assets_3971:https://www.anomali.com/images/uploads/blog/extracted-malware-source-code.png}"" /><br /> Figure 8</strong> - Extracted source code structure from a malware sample.</em></p> <p>Go binaries do not include a compilation timestamp.",T1140
+"after this action, generates a 32 byte slice of randomness via the call to “crypt/rand.Read”.<sup>[2]</sup> This function on Windows uses the “CryptGenRandom” API to generate the random data.",T1106
+The random data is encrypted with the threat actor’s 2048 bit key using RSA Optimal Asymmetric Encryption Padding (OAEP).</p> <h3>File Encryption</h3> <p>The malware uses a pair of “goroutines“ for each disk partition for the encryption of files.,T1027
+The random data is encrypted with the threat actor’s 2048 bit key using RSA Optimal Asymmetric Encryption Padding (OAEP).</p> <h3>File Encryption</h3> <p>The malware uses a pair of “goroutines“ for each disk partition for the encryption of files.,T1521
+The first routine scans the partition for all files and compares the file extension against the list of extensions shown in Figure 9 below.,T1083
+"If the file has an extension that is in the list, the file is added to a list of files to be encrypted.</p> <p><code>*.3fr *.accdb *.aes *.ai *.ARC *.arw *.asc *.asf *.asm *.asp *.avi *.backup *.bak *.bat *.bay *.bmp *.brd *.c *.cdr *.cer *.cgm *.class *.cmd *.cpp *.cr2 *.crt *.crw *.csr *.CSV *.dbf *.dch *.dcr *.der *.dif *.dip *.djv *.djvu *.dng *.doc *.DOC *.docb *.docm *.docx *.dot *.DOT *.dotm *.dotx *.dwg *.dxf *.dxg *.eps *.erf *.fla *.flv *.frm *.gif *.go *.gpg *.gz *.h *.html *.hwp *.ibd *.indd *.jar *.java *.jpe *.jpeg *.jpegm *.jpg *.kdc *.key *.lay *.lay6 *.ldf *.max *.mdb *.mdf *.mef *.mid *.mkv *.mml *.mov *.mpeg *.mpg *.mrw *.ms11 *.MYD *.MYI *.nef *.NEF *.nrw *.odb *.odg *.odm *.odp *.ods *.odt *.orf *.otg *.otp *.ots *.ott *.p12 *.p7b *.p7c *.PAQ *.pas *.pdd *.pdf *.pef *.pem *.pfx *.php *.png *.pot *.potm *.potx *.ppam *.pps *.ppsm *.ppsx *.ppt *.PPT *.pptm *.pptx *.psd *.pst *.ptx *.py *.qcow2 *.r3d *.raf *.rar *.raw *.rb *.rtf *.RTF *.rw2 *.rwl *.sch *(Security copy) *.sldm *.sldx *.slk *.sql *.sqlite3 *.SQLITE3 *.sqlitedb *.SQLITEDB *.srf *.srw *.stc *.std *.sti *.stw *.svg *.swf *.sxc *.sxd *.sxi *.sxm *.sxw *.tar *.tar.bz2 *.tbk *.tgz *.tif *.tiff *.txt *.uop *.uot *.vbs *.vdi *.vmdk *.vmx *.vob *.wav *.wb2 *.wks *.wma *.wmv *.wpd *.wps *.xlc *.xlk *.xlm *.xls *.XLS *.xlsb *.xlsm *.xlsx *.xlt *.xltm *.xltx *.xlw *.xml *.zip</code></p> <p style=""text-align: center;""><em><strong>Figure 9</strong> - List of file extensions the malware uses to determine if the file should be encrypted or not.</em></p> <p>The second routine encrypts all the files in the list identified by the other routine.",T1083
+Each file is encrypted with AES in CBC mode.,T1027
+The files are encrypted with AES in CBC mode.,T1027
+"src=""{assets_3972:https://www.anomali.com/images/uploads/blog/encryption-handler.png}"" /><br /> Figure 10</strong> - Screenshot of the routine creating the encryption handler.",T1113
+The files are encrypted with AES in CBC mode.,T1027
+The last four instructions create a 4k buffer that is used to encrypt the file 4k bytes at the time.</em></p> <p>The files are encrypted 4k bytes at a time.,T1124
+"If the file is smaller or the read returns less than 4k, the malware adds padding to the end of the file to make the total bytes a multiple of 16 bytes as required by AES.",T1083
+The original file is removed after the file has been encrypted.</p> <p>The ransomware writes the ransom note in all the folders with encrypted files.,T1027
+"src=""{assets_3973:https://www.anomali.com/images/uploads/blog/logic-for-writing-ransom-note.png}"" /><br /> Figure 11</strong> - Logic for writing the ransom note to the disk.</em></p> <p>The ransom note is stored in the binary as a Base64 encoded string.",T1027
+Figure 12 shows the decoded ransom note.</p> <p><code>Your files have been encrypted using military grade encryption.,T1027
+"It is worth noting that on the Smaug Onion site a screenshot of a ransomware message is presented (Figure 13) with Mandarin characters predominantly displayed.</p> <p style=""text-align: center;""><em><strong><img alt=""Mandarin characters visible on ransom note"" src=""{assets_3974:https://www.anomali.com/images/uploads/blog/Mandarin-characters-ransom-note.png}"" /><br /> Figure 13</strong> - Mandarin characters visible on ransom note</em></p> <p><strong>Corinda’s</strong> offer of Smaug did not appear to gain much traction on the forum leading to a follow up discount of a 15-day trial to reputable forum members, likely to boost reputation.",T1113
+It also does not delete backups and shadow copy files on Windows.,T1070.004
+This flaw will make it possible to recover the encrypted files from the shadow copy if the service is enabled.,T1027
+"Threatstream Enterprise users can find <a href=""https://ui.threatstream.com/tip/942687"" target=""_blank"">Indicators of Compromise (IOCs), signature, and more information about this threat here</a>.</p> <h2>How Anomali Helps</h2> <p>Anomali Threat Research provides actionable threat intelligence that helps customers, partners, and the security community to detect and mitigate the most serious threats to their organizations.",T1518.001
+"The team frequently publishes threat research in the form of white papers, blogs, and bulletins that are made available to the security community, general public, and news organizations.",T1518.001
+"For more information on how Anomali customers gain integrated access to threat research, visit: <a href=""https://www.anomali.com/products"">https://www.anomali.com/products</a>.</p> <h2>Mitre ATT&CK</h2> <ul> <li>T1486 - Data Encrypted for Impact</li> </ul> <h2>Endnotes</h2> <ol> <li>“rand package · pkg.go.dev”, accessed July 7, 2020, <a href=""https://pkg.go.dev/math/rand?tab=doc#Seed"" target=""_blank"">https://pkg.go.dev/math/rand?tab=doc#Seed</a></li> <li>“rand package · pkg.go.dev”, accessed July 7, 2020, <a href=""https://pkg.go.dev/crypto/rand?tab=doc#Read"" target=""_blank"">https://pkg.go.dev/crypto/rand?tab=doc#Read</a></li> </ol>Authored by: Joakim Kennedy and Rory Gould Anomali ThreatStream customers can find Indicators of Compromise (IOCs), signatures, and more information about this threat here.",T1071
+"The post also directed users as to how they could avail of the service: contacting smaug-ransomware@protonmail.com with a registration fee of 0.2 BTC (appx $1,900 (USD) at time of posting) and subsequent service fees of 20%.",T1543
+"Figure 1 - Initial Smaug offering on Exploit.in Account History Corinda’s Exploit account was created on May 17, 2019 as a paid registration (paid registrations are completely anonymous and do not link to other accounts on ‘friendly forums’), and remained dormant until Oct. 2019.",T1087
+Do not be shy’ These posts were recovered through Sixgill as the original topic has since been deleted and is no longer available on the forum.,T1070.004
+"Manage Campaign With a campaign created, a user can download the relevant payload for the system(s) they are attempting to infect; Mac, Linux and Windows are all available.",T1105
+The key is encrypted by the threat actor's RSA public key which means the machine key can only be encrypted by a threat actor's private key.,T1027
+The key is encrypted by the threat actor's RSA public key which means the machine key can only be encrypted by a threat actor's private key.,T1521
+Key Generation Smaug generates a unique encryption key for each infected machine.,T1521
+[2] This function on Windows uses the “CryptGenRandom” API to generate the random data.,T1106
+The random data is encrypted with the threat actor’s 2048 bit key using RSA Optimal Asymmetric Encryption Padding (OAEP).,T1027
+The first routine scans the partition for all files and compares the file extension against the list of extensions shown in Figure 9 below.,T1083
+"If the file has an extension that is in the list, the file is added to a list of files to be encrypted.",T1083
+*.3fr *.accdb *.aes *.ai *.ARC *.arw *.asc *.asf *.asm *.asp *.avi *.backup *.bak *.bat *.bay *.bmp *.brd *.c *.cdr *.cer *.cgm *.class *.cmd *.cpp *.cr2 *.crt *.crw *.csr *.CSV *.dbf *.dch *.dcr *.der *.dif *.dip *.djv *.djvu *.dng *.doc *.DOC *.docb *.docm *.docx *.dot *.DOT *.dotm *.dotx *.dwg *.dxf *.dxg *.eps *.erf *.fla *.flv *.frm *.gif *.go *.gpg *.gz *.h *.html *.hwp *.ibd *.indd *.jar *.java *.jpe *.jpeg *.jpegm *.jpg *.kdc *.key *.lay *.lay6 *.ldf *.max *.mdb *.mdf *.mef *.mid *.mkv *.mml *.mov *.mpeg *.mpg *.mrw *.ms11 *.MYD *.MYI *.nef *.NEF *.nrw *.odb *.odg *.odm *.odp *.ods *.odt *.orf *.otg *.otp *.ots *.ott *.p12 *.p7b *.p7c *.PAQ *.pas *.pdd *.pdf *.pef *.pem *.pfx *.php *.png *.pot *.potm *.potx *.ppam *.pps *.ppsm *.ppsx *.ppt *.PPT *.pptm *.pptx *.psd *.pst *.ptx *.py *.qcow2 *.r3d *.raf *.rar *.raw *.rb *.rtf *.RTF *.rw2 *.rwl *.sch *(Security copy) *.sldm *.sldx *.slk *.sql *.sqlite3 *.SQLITE3 *.sqlitedb *.SQLITEDB *.srf *.srw *.stc *.std *.sti *.stw *.svg *.swf *.sxc *.sxd *.sxi *.sxm *.sxw *.tar *.tar.bz2 *.tbk *.tgz *.tif *.tiff *.txt *.uop *.uot *.vbs *.vdi *.vmdk *.vmx *.vob *.wav *.wb2 *.wks *.wma *.wmv *.wpd *.wps *.xlc *.xlk *.xlm *.xls *.XLS *.xlsb *.xlsm *.xlsx *.xlt *.xltm *.xltx *.xlw *.xml *.zip Figure 9 - List of file extensions the malware uses to determine if the file should be encrypted or not.,T1083
+Each file is encrypted with AES in CBC mode.,T1027
+The files are encrypted with AES in CBC mode.,T1027
+The files are encrypted 4k bytes at a time.,T1027
+"If the file is smaller or the read returns less than 4k, the malware adds padding to the end of the file to make the total bytes a multiple of 16 bytes as required by AES.",T1083
+The original file is removed after the file has been encrypted.,T1027
+The ransomware writes the ransom note in all the folders with encrypted files.,T1027
+The ransom note is stored in the binary as a Base64 encoded string.,T1027
+Your files have been encrypted using military grade encryption.,T1027
+It also does not delete backups and shadow copy files on Windows.,T1070.004
+This flaw will make it possible to recover the encrypted files from the shadow copy if the service is enabled.,T1027
+"How Anomali Helps Anomali Threat Research provides actionable threat intelligence that helps customers, partners, and the security community to detect and mitigate the most serious threats to their organizations.",T1518.001
+"The team frequently publishes threat research in the form of white papers, blogs, and bulletins that are made available to the security community, general public, and news organizations.",T1518.001
+"Mitre ATT&CK  T1486 - Data Encrypted for Impact  Endnotes  “rand package · pkg.go.dev”, accessed July 7, 2020, https://pkg.go.dev/math/rand?tab=doc#Seed “rand package · pkg.go.dev”, accessed July 7, 2020, https://pkg.go.dev/crypto/rand?tab=doc#Read Get the Latest Anomali Updates and Cybersecurity News – Straight To Your InboxBecome a subscriber to the Anomali NewsletterReceive a monthly summary of our latest threat intelligence content, research, news, events, and more.Subscribe TodayExplore more topicsAnomali
+
+Anomali Cyber Watch
+
+Anomali Match
+
+Cyber Threat Intelligence
+
+Malware
+
+Modern Honey Network
+
+Research
+
+SIEM
+
+STAXX
+
+Splunk
+
+Threat Intelligence Platform
+
+ThreatStream
+
+Platform and ProductsThe Anomali PlatformExposure ManagementAttack Surface ManagementDigital Risk ProtectionDetection and ResponseMatch Security AnalyticsThreat Intelligence ManagementThreatStreamAnomali Intel ChannelsSecurity AutomationLensIntegratorFree ToolsAnomali Cyber WatchSTAXXThe Anomali NewsletterMarketplaceThreat Intelligence FeedsThreat Analysis Tools and EnrichmentsSecurity System PartnersMarketplace for PartnersPartnersPartners OverviewJoin the Technology Partner ProgramAnomali SDKsThreat Intel SharingPartner Portal LoginCollaborateCommunity OverviewCISO EventsCISO ResourcesCISO BlogResourcesBrowse Resource LibraryWhat is Threat Intelligence?Threat Intelligence SharingWhat is a Threat Intelligence Platform (TIP)?What are STIX/TAXII?What is MITRE ATT&CK?What is a Cyber Fusion Center?What is SOAR?COVID-19 ResourcesCompanyAbout AnomaliAnomali Press RoomEventsDetect LIVELeadershipReviewsAwardsCareersThreatStream® is a registered trademark of Anomali Inc. Anomali Match™ (""Match"") and Anomali Lens™ (""Lens"") are trademarks of Anomali Inc.Schedule DemoContactSupportBlog© Copyright 2023 Anomali®.",T1518.001

@@ -9,6 +9,10 @@ from selenium.common.exceptions import StaleElementReferenceException
 from selenium.common.exceptions import ElementClickInterceptedException
 
 
+# options = webdriver.ChromeOptions()
+# options.add_argument('--headless')
+# driver = webdriver.Chrome(options=options)
+
 driver = webdriver.Chrome()
 driver.implicitly_wait(10)
 

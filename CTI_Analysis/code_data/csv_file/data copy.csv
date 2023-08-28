@@ -1,3 +1,0 @@
-Text,Attack ID
-"Adversaries may abuse command and script interpreters to execute commands, scripts, or binaries.",T1059
-"Most systems come with some built-in command-line interface and scripting capabilities, for example, macOS and Linux distributions include some flavor of Unix Shell while Windows installations include the Windows Command Shell and PowerShell.",T1059
