@@ -1,13 +1,16 @@
 import os
 import json
+from tqdm import tqdm
 
-def process_file(file_path, label):
+def process_file(file_path, label, count):
+    # if count == 14: return
     with open(file_path, "r") as f:
         lines = f.readlines()
 
     nodes = set()
     edges = []
     edge_attrs = []
+    # label = []
     
     for line in lines:
         parts = line.strip().split()
@@ -35,24 +38,40 @@ def process_file(file_path, label):
     }
 
 output_data = []
-folder_path = "../data_new/source_data/4_extended_APG_bai"
-# folder_path = "../data_new/source_data/test"
+# folder_path = "../data_new/source_data/4_extended_APG_bai"
+# folder_path = "../data_new/source_data/4"
+folder_path = "../data_new/exp3/source_data/test"
 folder_names = os.listdir(folder_path)
 
 for folder_name in folder_names:
-    if folder_name == "65" or folder_name == "20230817_readme.md": 
-        continue # skip these folders/files
+    # if folder_name == "65" or folder_name == "20230817_readme.md": 
+    #     continue # skip these folders/files
+    count = 0
     
     folder_path_inside = os.path.join(folder_path, folder_name)
     files = os.listdir(folder_path_inside)
 
-    for file_name in files:
+    for file_name in tqdm(files):
+        print(f"in to {count}")
+        # if count == 9: continue
         if file_name.endswith(".txt"):
+            
             file_path = os.path.join(folder_path_inside, file_name)
-            data = process_file(file_path, int(folder_name))
+            print("hi")
+            data = process_file(file_path, int(folder_name), count)
+            print("hi2")
             output_data.append(data)
+            # if count == 912: print(data)
+            print(f"finish: {count}")
 
-with open("../data_new/test_graph/graph_without_benign.jsonl", "w") as f:
+        count += 1
+        print(data)
+        # if count == 10: break
+        print("out")
+
+# with open("../data_new/test_graph/graph_without_benign.jsonl", "w") as f:
+# with open("../data_new/graph/with_benign/graph_benign_test.jsonl", "w") as f:
+with open("../data_new/graph/with_benign/graph_benign_test.jsonl", "a") as f:
     for item in output_data:
         f.write(json.dumps(item))
         f.write("\n")
