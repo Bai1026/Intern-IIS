@@ -1,7 +1,7 @@
 import os
 
 # folder_paths = ["./with_benign", "./without_benign"]
-folder_paths = ['4_extended_APG_with_benign']
+folder_paths = ['../data_new/exp3/source_data/4_extended_APG_with_benign']
 
 count = sum(len(os.listdir(folder_path)) for folder_path in folder_paths)
 
