@@ -7,17 +7,20 @@
 ## Processing:  
 
 ## Graphing:
-- big graph: the graph contains all APs and generate in a single png file.
-- graph:
-- graph_benign:
-- graph_others:
-- graph_self:
-- graph_sigma:
-- show_benign:
-- show_self:
-- show_others:
-- subplot:
-- subplot_only_benign:
+- **big_graph.py**: the graph contains all APs and generate in a single png file.  
+
+- **graph_self.py**: create the graph of all the APs themselves, and output them as the png in a single folder.
+- **graph_others.py**: create the graph of all the APs with the other neighbor nodes(1 hop), and output them as the png in a single folder.
+- **graph_benign.py**: create the graph of all the APs with the other neighbor AP nodes and neighbor benign nodes(1 hop), and output them as the png in a single folder.
+
+- **show_self.ipynb**: do the same thing as the graph_self except for this script shows the figures on the webpage and you can scroll.
+- **show_others.ipynb**: do the same thing as the graph_others except for this script shows the figures on the webpage and you can scroll.
+- **show_benign.ipynb**: do the same thing as the graph_benign except for this script shows the figures on the webpage and you can scroll.
+
+- **subplot.ipynb**: let the graph_self's output be presented in 3 columns and 55 rows
+- **subplot_only_benign.ipynb**: let the graph_benign's output be presented in 3 columns and 55 rows (we do not consider neighbor AP nodes here)
+
+- **graph_sigma.py**: create the graph of the comparison of the prediction of the sigma rule and the true data, and we only consider APs themselves here. If the label is matched, the node would be red. Else if the label is not matched, the node would be translucent.
 
 ## Prerequisites:
 - Python 3.8 or higher
