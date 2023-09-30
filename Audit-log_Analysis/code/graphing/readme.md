@@ -18,3 +18,6 @@
 - show_others:
 - subplot:
 - subplot_only_benign:
+
+## Prerequisites:
+- Python 3.8 or higher
