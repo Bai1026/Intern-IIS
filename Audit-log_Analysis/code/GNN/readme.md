@@ -1,4 +1,15 @@
 # This is the readme of the GNN training code of this project  
+> Before the code explanation you should know:
+- **Experiment 1**: do the **graph classification** with the 165 APs. And only contains the AP itself in each data input
+- **Experiment 2**: do the **graph classification** with the 165 APs and 1 benign. And only contains the AP itself in each data input
+- **Experiment 3**: do the **edge classification** with the the 165 APs and 1 benign. And the graph contains the neighbor benign nodes.  
+
+- Example graph of experiment 1 and 2:
+<img src="https://github.com/Bai1026/Intern-IIS/blob/main/Audit-log_Analysis/Figure/graph_self/T1003.002_7fa4ea18694f2552547b65e23952cabb.png" alt="error pic" width="650" height="650">
+
+- Example graph of experiment 3:  
+<img src="https://github.com/Bai1026/Intern-IIS/blob/main/Audit-log_Analysis/Figure/graph_with_benign/1003.001_0ef4cc7b-611c-4237-b20b-db36b6906554.png" alt="error pic" width="650" height="650">
+
 > This part contains 2 folders:
 - [Processing](https://github.com/Bai1026/Intern-IIS/tree/main/Audit-log_Analysis/code/GNN/processing)
 - [Training](https://github.com/Bai1026/Intern-IIS/tree/main/Audit-log_Analysis/code/GNN/training)
@@ -13,21 +24,15 @@
 - **delete_row.py**: for debugging
 - **delete.py**: for debugging
 
-## Graphing:
-- **big_graph.py**: the graph contains all APs and generate in a single png file.  
+## Training:
+> have 4 types of training
+- **code_exp1-2**: use GAT or GCN model to train do the experiment 1 and 2
+- **code_exp3**:  use GAT or GCN model to train do the experiment 3
 
-- **graph_self.py**: create the graph of all the APs themselves, and output them as the png in a single folder.
-- **graph_others.py**: create the graph of all the APs with the other neighbor nodes(1 hop), and output them as the png in a single folder.
-- **graph_benign.py**: create the graph of all the APs with the other neighbor AP nodes and neighbor benign nodes(1 hop), and output them as the png in a single folder.
+- **graphSAGE_exp1-2**: use GraphSAGE model to train do the experiment 1 and 2
+- **graphSAGE_exp3**: use GraphSAGE model to train do the experiment 3
 
-- **show_self.ipynb**: do the same thing as the graph_self except for this script shows the figures on the webpage and you can scroll.
-- **show_others.ipynb**: do the same thing as the graph_others except for this script shows the figures on the webpage and you can scroll.
-- **show_benign.ipynb**: do the same thing as the graph_benign except for this script shows the figures on the webpage and you can scroll.
 
-- **subplot.ipynb**: let the graph_self's output be presented in 3 columns and 55 rows
-- **subplot_only_benign.ipynb**: let the graph_benign's output be presented in 3 columns and 55 rows (we do not consider neighbor AP nodes here)
-
-- **graph_sigma.py**: create the graph of the comparison of the prediction of the sigma rule and the true data, and we only consider APs themselves here. If the label is matched, the node would be red. Else if the label is not matched, the node would be translucent.
 
 ## Prerequisites:
 - Python 3.8 or higher
