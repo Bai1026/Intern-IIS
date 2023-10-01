@@ -1,0 +1,535 @@
+09/18/2023, 14:33:58# labels of 5000: tensor([102,  31, 120,  50,  57,  43,  16,  11], device='cuda:0') torch.Size([8])
+09/18/2023, 14:33:58# predicted of 5000: tensor([102, 108, 156, 115, 108,  10,  16, 108], device='cuda:0') torch.Size([8])
+09/18/2023, 14:34:57# labels of 10000: tensor([ 41,  94, 104,  14, 154, 158, 100,  17], device='cuda:0') torch.Size([8])
+09/18/2023, 14:34:57# predicted of 10000: tensor([ 41,  72, 142,  88, 154,  88, 107,  17], device='cuda:0') torch.Size([8])
+09/18/2023, 14:36:18# labels of 15000: tensor([ 36, 156,  10, 108,   8,  46,  10, 112], device='cuda:0') torch.Size([8])
+09/18/2023, 14:36:18# predicted of 15000: tensor([163, 156,  10, 131,  91,  46,  10, 163], device='cuda:0') torch.Size([8])
+09/18/2023, 14:36:43# total batches: 16500
+09/18/2023, 14:36:43# Epoch 0 | Train Loss: 3.7679 | Train Accuracy: 0.2987
+09/18/2023, 14:36:43# labels of Validation: tensor([156, 140,  90,  21, 161,  88,  26, 121], device='cuda:0') torch.Size([8])
+09/18/2023, 14:36:43# predicted of Validation: tensor([156, 140, 108,  21, 161, 108,  26,  14], device='cuda:0') torch.Size([8])
+09/18/2023, 14:36:43# labels of 0: tensor([156, 140,  90,  21, 161,  88,  26, 121], device='cuda:0') torch.Size([8])
+09/18/2023, 14:36:43# predicted of 0: tensor([156, 140, 108,  21, 161, 108,  26,  14], device='cuda:0') torch.Size([8])
+09/18/2023, 14:36:55# labels of Validation: tensor([ 68, 119,  83, 161, 118, 133,  85,   9], device='cuda:0') torch.Size([8])
+09/18/2023, 14:36:55# predicted of Validation: tensor([108,  14,  14, 161, 118, 133,  85,  14], device='cuda:0') torch.Size([8])
+09/18/2023, 14:37:08# labels of Validation: tensor([119,   0,  89,  80,  91, 144, 142,   9], device='cuda:0') torch.Size([8])
+09/18/2023, 14:37:08# predicted of Validation: tensor([ 14, 130,  89,  80, 108,  14,  14,  14], device='cuda:0') torch.Size([8])
+09/18/2023, 14:37:09# Validation Loss: 2.8575 | Validation Accuracy: 0.5248
+
+09/18/2023, 14:37:09# Find a better model!!
+09/18/2023, 14:38:39# labels of 5000: tensor([ 93, 130,  15,  69,  41,  39,  62,   2], device='cuda:0') torch.Size([8])
+09/18/2023, 14:38:39# predicted of 5000: tensor([108, 130,  15,  69,  41,  15,  62,  49], device='cuda:0') torch.Size([8])
+09/18/2023, 14:40:09# labels of 10000: tensor([ 74,  59,  50,  49,  56, 100,   9,  42], device='cuda:0') torch.Size([8])
+09/18/2023, 14:40:09# predicted of 10000: tensor([ 44, 131,  50,  92,  56, 100,  44,  44], device='cuda:0') torch.Size([8])
+09/18/2023, 14:41:40# labels of 15000: tensor([ 20, 146, 111,  81, 149,  70,  56,  20], device='cuda:0') torch.Size([8])
+09/18/2023, 14:41:40# predicted of 15000: tensor([ 20, 146,  48,  48, 149,  70,  56,  20], device='cuda:0') torch.Size([8])
+09/18/2023, 14:42:08# total batches: 16500
+09/18/2023, 14:42:08# Epoch 1 | Train Loss: 2.2604 | Train Accuracy: 0.5768
+09/18/2023, 14:42:08# labels of Validation: tensor([ 11, 129,   2, 113,  81,  28,  85,  33], device='cuda:0') torch.Size([8])
+09/18/2023, 14:42:08# predicted of Validation: tensor([ 54, 129, 111, 110,  81,  28,  85, 111], device='cuda:0') torch.Size([8])
+09/18/2023, 14:42:08# labels of 0: tensor([ 11, 129,   2, 113,  81,  28,  85,  33], device='cuda:0') torch.Size([8])
+09/18/2023, 14:42:08# predicted of 0: tensor([ 54, 129, 111, 110,  81,  28,  85, 111], device='cuda:0') torch.Size([8])
+09/18/2023, 14:42:20# labels of Validation: tensor([101,  42, 134,  93, 127,  82,  55,  47], device='cuda:0') torch.Size([8])
+09/18/2023, 14:42:20# predicted of Validation: tensor([101, 111, 134, 103, 127,  82,  81, 111], device='cuda:0') torch.Size([8])
+09/18/2023, 14:42:32# labels of Validation: tensor([110,  63,  70,  64, 100, 123,   6,  49], device='cuda:0') torch.Size([8])
+09/18/2023, 14:42:32# predicted of Validation: tensor([110,  63,  70, 131, 100, 123,   6,  81], device='cuda:0') torch.Size([8])
+09/18/2023, 14:42:33# Validation Loss: 1.8508 | Validation Accuracy: 0.5942
+
+09/18/2023, 14:42:33# Find a better model!!
+09/18/2023, 14:44:04# labels of 5000: tensor([118,  61, 158,  67,  23,  31, 165,  84], device='cuda:0') torch.Size([8])
+09/18/2023, 14:44:04# predicted of 5000: tensor([118,  61,  18,  67,  23,  18, 165,  84], device='cuda:0') torch.Size([8])
+09/18/2023, 14:45:30# labels of 10000: tensor([126, 161, 101, 118, 101, 154,  84,  87], device='cuda:0') torch.Size([8])
+09/18/2023, 14:45:30# predicted of 10000: tensor([126, 161, 101, 118, 101, 154,  84,  48], device='cuda:0') torch.Size([8])
+09/18/2023, 14:47:00# labels of 15000: tensor([125,   2,  25,  54, 109, 157, 128,  57], device='cuda:0') torch.Size([8])
+09/18/2023, 14:47:00# predicted of 15000: tensor([112,  81,  25, 112, 112, 142, 128, 112], device='cuda:0') torch.Size([8])
+09/18/2023, 14:47:27# total batches: 16500
+09/18/2023, 14:47:27# Epoch 2 | Train Loss: 1.7109 | Train Accuracy: 0.5980
+09/18/2023, 14:47:27# labels of Validation: tensor([ 75,  89,  83, 156,  56,  42,  33, 150], device='cuda:0') torch.Size([8])
+09/18/2023, 14:47:27# predicted of Validation: tensor([ 48,  89,  44, 156,  56,  48,  48, 150], device='cuda:0') torch.Size([8])
+09/18/2023, 14:47:27# labels of 0: tensor([ 75,  89,  83, 156,  56,  42,  33, 150], device='cuda:0') torch.Size([8])
+09/18/2023, 14:47:27# predicted of 0: tensor([ 48,  89,  44, 156,  56,  48,  48, 150], device='cuda:0') torch.Size([8])
+09/18/2023, 14:47:40# labels of Validation: tensor([  4, 105,   3,  80,  21, 164,  86,  24], device='cuda:0') torch.Size([8])
+09/18/2023, 14:47:40# predicted of Validation: tensor([150, 105,   3,  80,  21, 150,  86, 150], device='cuda:0') torch.Size([8])
+09/18/2023, 14:47:52# labels of Validation: tensor([ 10, 136,  93, 138,  57, 102, 132, 134], device='cuda:0') torch.Size([8])
+09/18/2023, 14:47:52# predicted of Validation: tensor([ 10, 136,  64, 138,  38, 102, 132, 134], device='cuda:0') torch.Size([8])
+09/18/2023, 14:47:53# Validation Loss: 1.6319 | Validation Accuracy: 0.6014
+
+09/18/2023, 14:47:53# Find a better model!!
+09/18/2023, 14:49:25# labels of 5000: tensor([ 90,  38,  12, 165, 150, 109,  89,  74], device='cuda:0') torch.Size([8])
+09/18/2023, 14:49:25# predicted of 5000: tensor([108,  60,  60, 165,  60,  60,  89,  60], device='cuda:0') torch.Size([8])
+09/18/2023, 14:50:54# labels of 10000: tensor([ 72, 113, 135,  98, 132,   5, 110, 158], device='cuda:0') torch.Size([8])
+09/18/2023, 14:50:54# predicted of 10000: tensor([ 72,  91, 135,  98, 132,   5,  91, 116], device='cuda:0') torch.Size([8])
+09/18/2023, 14:52:23# labels of 15000: tensor([161,  89, 127,  32, 111,  34,  40,  87], device='cuda:0') torch.Size([8])
+09/18/2023, 14:52:23# predicted of 15000: tensor([161,  89, 127,  32, 150,  31,  40, 150], device='cuda:0') torch.Size([8])
+09/18/2023, 14:52:49# total batches: 16500
+09/18/2023, 14:52:49# Epoch 3 | Train Loss: 1.5935 | Train Accuracy: 0.6021
+09/18/2023, 14:52:49# labels of Validation: tensor([  5, 164,  56, 162, 154, 125,   4, 127], device='cuda:0') torch.Size([8])
+09/18/2023, 14:52:49# predicted of Validation: tensor([  5, 112,  56, 112, 154,  54,  54, 127], device='cuda:0') torch.Size([8])
+09/18/2023, 14:52:49# labels of 0: tensor([  5, 164,  56, 162, 154, 125,   4, 127], device='cuda:0') torch.Size([8])
+09/18/2023, 14:52:49# predicted of 0: tensor([  5, 112,  56, 112, 154,  54,  54, 127], device='cuda:0') torch.Size([8])
+09/18/2023, 14:53:02# labels of Validation: tensor([148, 150,  84,  69, 123,  90, 129, 162], device='cuda:0') torch.Size([8])
+09/18/2023, 14:53:02# predicted of Validation: tensor([148,  54,  84,  69, 123,  91, 129, 112], device='cuda:0') torch.Size([8])
+09/18/2023, 14:53:14# labels of Validation: tensor([114,  85,  29, 143,  66, 147, 105,  33], device='cuda:0') torch.Size([8])
+09/18/2023, 14:53:14# predicted of Validation: tensor([110,  85,  29, 112,  66, 147, 105, 112], device='cuda:0') torch.Size([8])
+09/18/2023, 14:53:14# Validation Loss: 1.5711 | Validation Accuracy: 0.6013
+
+09/18/2023, 14:53:14# Find a better model!!
+09/18/2023, 14:54:44# labels of 5000: tensor([  2, 113,  25,  28,  79,  72,   1, 104], device='cuda:0') torch.Size([8])
+09/18/2023, 14:54:44# predicted of 5000: tensor([ 44, 113,  25,  28,  72,  72,  47,  44], device='cuda:0') torch.Size([8])
+09/18/2023, 14:56:13# labels of 10000: tensor([110,  47, 157, 116,  28,  87,   1,  20], device='cuda:0') torch.Size([8])
+09/18/2023, 14:56:13# predicted of 10000: tensor([  8,   1,  87,   1,  28, 158,   1,  20], device='cuda:0') torch.Size([8])
+09/18/2023, 14:57:39# labels of 15000: tensor([143,  95,  69, 104,  87,  90,  11,   0], device='cuda:0') torch.Size([8])
+09/18/2023, 14:57:39# predicted of 15000: tensor([ 30,  95,  69,  30,  30, 110,  38,   0], device='cuda:0') torch.Size([8])
+09/18/2023, 14:58:04# total batches: 16500
+09/18/2023, 14:58:04# Epoch 4 | Train Loss: 1.5555 | Train Accuracy: 0.6034
+09/18/2023, 14:58:05# labels of Validation: tensor([ 54,   4,  32, 113, 155, 116, 125,  53], device='cuda:0') torch.Size([8])
+09/18/2023, 14:58:05# predicted of Validation: tensor([ 48,  48,  32, 114, 155,  48,  48,  48], device='cuda:0') torch.Size([8])
+09/18/2023, 14:58:05# labels of 0: tensor([ 54,   4,  32, 113, 155, 116, 125,  53], device='cuda:0') torch.Size([8])
+09/18/2023, 14:58:05# predicted of 0: tensor([ 48,  48,  32, 114, 155,  48,  48,  48], device='cuda:0') torch.Size([8])
+09/18/2023, 14:58:17# labels of Validation: tensor([129,  62, 152,  70,  64, 139, 134,  96], device='cuda:0') torch.Size([8])
+09/18/2023, 14:58:17# predicted of Validation: tensor([129,  62,  48,  70,  64, 139, 134,  96], device='cuda:0') torch.Size([8])
+09/18/2023, 14:58:28# labels of Validation: tensor([ 48,  93,  78,  42,  24,  54, 128,  62], device='cuda:0') torch.Size([8])
+09/18/2023, 14:58:28# predicted of Validation: tensor([ 42,  64,  67,  48,  48,  48, 128,  62], device='cuda:0') torch.Size([8])
+09/18/2023, 14:58:29# Validation Loss: 1.5459 | Validation Accuracy: 0.6063
+
+09/18/2023, 14:58:29# Find a better model!!
+09/18/2023, 14:59:58# labels of 5000: tensor([ 70,  13, 152, 141, 139,  62,   0, 117], device='cuda:0') torch.Size([8])
+09/18/2023, 14:59:58# predicted of 5000: tensor([ 70,  13,   2, 141, 139,  62,   0, 117], device='cuda:0') torch.Size([8])
+09/18/2023, 15:01:26# labels of 10000: tensor([124,  97,  79, 129,   5,  11, 134, 102], device='cuda:0') torch.Size([8])
+09/18/2023, 15:01:26# predicted of 10000: tensor([152, 151,  79, 129,   5, 152, 134, 102], device='cuda:0') torch.Size([8])
+09/18/2023, 15:02:57# labels of 15000: tensor([119,   6, 135,  55,  85,  83,  29,   9], device='cuda:0') torch.Size([8])
+09/18/2023, 15:02:57# predicted of 15000: tensor([ 49,   6, 135,  97,  85, 124,  29, 124], device='cuda:0') torch.Size([8])
+09/18/2023, 15:03:24# total batches: 16500
+09/18/2023, 15:03:24# Epoch 5 | Train Loss: 1.5378 | Train Accuracy: 0.6049
+09/18/2023, 15:03:24# labels of Validation: tensor([ 70, 121,  67,   6,  83,  97,  17, 161], device='cuda:0') torch.Size([8])
+09/18/2023, 15:03:24# predicted of Validation: tensor([ 70,  92,  67,   6,  87,  92,  17, 161], device='cuda:0') torch.Size([8])
+09/18/2023, 15:03:24# labels of 0: tensor([ 70, 121,  67,   6,  83,  97,  17, 161], device='cuda:0') torch.Size([8])
+09/18/2023, 15:03:24# predicted of 0: tensor([ 70,  92,  67,   6,  87,  92,  17, 161], device='cuda:0') torch.Size([8])
+09/18/2023, 15:03:37# labels of Validation: tensor([105, 154, 103,  85, 153,  50,  10,   2], device='cuda:0') torch.Size([8])
+09/18/2023, 15:03:37# predicted of Validation: tensor([105, 154,  64,  85, 153,  50,  10,  34], device='cuda:0') torch.Size([8])
+09/18/2023, 15:03:48# labels of Validation: tensor([ 84,  99,  78,   6, 166,  57,  87,  59], device='cuda:0') torch.Size([8])
+09/18/2023, 15:03:48# predicted of Validation: tensor([ 84,  99,  67,   6, 166,  92,  92, 108], device='cuda:0') torch.Size([8])
+09/18/2023, 15:03:49# Validation Loss: 1.5306 | Validation Accuracy: 0.6065
+
+09/18/2023, 15:03:49# Find a better model!!
+09/18/2023, 15:05:18# labels of 5000: tensor([ 71,  29, 150, 135,  71,  12, 117,  58], device='cuda:0') torch.Size([8])
+09/18/2023, 15:05:18# predicted of 5000: tensor([ 71,  29,  53, 135,  71, 152, 117,  58], device='cuda:0') torch.Size([8])
+09/18/2023, 15:06:43# labels of 10000: tensor([  0,  20,  26, 107,  93,  56,   7, 125], device='cuda:0') torch.Size([8])
+09/18/2023, 15:06:43# predicted of 10000: tensor([  0,  20,  26, 107, 113,  56,   7,  57], device='cuda:0') torch.Size([8])
+09/18/2023, 15:08:10# labels of 15000: tensor([ 45, 112,  42, 125,  41, 137,   0,   9], device='cuda:0') torch.Size([8])
+09/18/2023, 15:08:10# predicted of 15000: tensor([ 45,   1,   1,   1,  41, 137,   0, 142], device='cuda:0') torch.Size([8])
+09/18/2023, 15:08:38# total batches: 16500
+09/18/2023, 15:08:38# Epoch 6 | Train Loss: 1.5267 | Train Accuracy: 0.6064
+09/18/2023, 15:08:38# labels of Validation: tensor([111, 152,  43,  66,  90,  70,  49, 100], device='cuda:0') torch.Size([8])
+09/18/2023, 15:08:38# predicted of Validation: tensor([111, 109,  43,  66,  91,  70, 109, 100], device='cuda:0') torch.Size([8])
+09/18/2023, 15:08:38# labels of 0: tensor([111, 152,  43,  66,  90,  70,  49, 100], device='cuda:0') torch.Size([8])
+09/18/2023, 15:08:38# predicted of 0: tensor([111, 109,  43,  66,  91,  70, 109, 100], device='cuda:0') torch.Size([8])
+09/18/2023, 15:08:50# labels of Validation: tensor([ 49,  42,  93, 108,  58, 153,  42, 106], device='cuda:0') torch.Size([8])
+09/18/2023, 15:08:50# predicted of Validation: tensor([  9, 111, 114, 131,  58, 153, 111, 106], device='cuda:0') torch.Size([8])
+09/18/2023, 15:09:02# labels of Validation: tensor([ 37,  68, 146,  78, 140,  13,  47,  73], device='cuda:0') torch.Size([8])
+09/18/2023, 15:09:02# predicted of Validation: tensor([ 37,  68, 146,  78, 140,  13, 109,  73], device='cuda:0') torch.Size([8])
+09/18/2023, 15:09:03# Validation Loss: 1.5255 | Validation Accuracy: 0.6062
+
+09/18/2023, 15:09:03# Find a better model!!
+09/18/2023, 15:10:33# labels of 5000: tensor([ 60,  99,  73,  27, 151,   7,  62,  82], device='cuda:0') torch.Size([8])
+09/18/2023, 15:10:33# predicted of 5000: tensor([74, 99, 73, 27, 74,  7, 62, 82], device='cuda:0') torch.Size([8])
+09/18/2023, 15:12:01# labels of 10000: tensor([119,  18, 130,  44,  36, 113,  24,  87], device='cuda:0') torch.Size([8])
+09/18/2023, 15:12:01# predicted of 10000: tensor([ 76,  42, 130,  92,  87,  64,  42,  60], device='cuda:0') torch.Size([8])
+09/18/2023, 15:13:32# labels of 15000: tensor([123, 149, 141, 138,  49,  46,  33,  95], device='cuda:0') torch.Size([8])
+09/18/2023, 15:13:32# predicted of 15000: tensor([123, 149, 141, 138,  60,  46,  60,  95], device='cuda:0') torch.Size([8])
+09/18/2023, 15:13:59# total batches: 16500
+09/18/2023, 15:13:59# Epoch 7 | Train Loss: 1.5202 | Train Accuracy: 0.6069
+09/18/2023, 15:13:59# labels of Validation: tensor([133,  57, 112, 112,   4,  91,  61, 103], device='cuda:0') torch.Size([8])
+09/18/2023, 15:13:59# predicted of Validation: tensor([133,  14,  97,  31,  97,  59,  61, 110], device='cuda:0') torch.Size([8])
+09/18/2023, 15:13:59# labels of 0: tensor([133,  57, 112, 112,   4,  91,  61, 103], device='cuda:0') torch.Size([8])
+09/18/2023, 15:13:59# predicted of 0: tensor([133,  14,  97,  31,  97,  59,  61, 110], device='cuda:0') torch.Size([8])
+09/18/2023, 15:14:10# labels of Validation: tensor([117,  35, 157,  39,   3,   0,  21, 141], device='cuda:0') torch.Size([8])
+09/18/2023, 15:14:10# predicted of Validation: tensor([117,  35,  33,  39,   3,   0,  21, 141], device='cuda:0') torch.Size([8])
+09/18/2023, 15:14:22# labels of Validation: tensor([131,  14,  67, 150,  62, 158,  62,  37], device='cuda:0') torch.Size([8])
+09/18/2023, 15:14:22# predicted of Validation: tensor([131,  60,  78,  97,  62,  60,  62,  37], device='cuda:0') torch.Size([8])
+09/18/2023, 15:14:23# Validation Loss: 1.5188 | Validation Accuracy: 0.6071
+
+09/18/2023, 15:14:23# Find a better model!!
+09/18/2023, 15:15:52# labels of 5000: tensor([ 66,   3,  88, 162,  76, 139,  96,  97], device='cuda:0') torch.Size([8])
+09/18/2023, 15:15:52# predicted of 5000: tensor([ 66,   3, 113,  44,  92, 139,  96,  54], device='cuda:0') torch.Size([8])
+09/18/2023, 15:17:24# labels of 10000: tensor([131, 155, 130, 166, 107, 136,  71,  13], device='cuda:0') torch.Size([8])
+09/18/2023, 15:17:24# predicted of 10000: tensor([131, 155, 130, 166, 107, 136,  71,  13], device='cuda:0') torch.Size([8])
+09/18/2023, 15:18:56# labels of 15000: tensor([141,  61,  50,  81,  97,  69, 106, 138], device='cuda:0') torch.Size([8])
+09/18/2023, 15:18:56# predicted of 15000: tensor([141,  61,  50,  60,  24,  69, 106, 138], device='cuda:0') torch.Size([8])
+09/18/2023, 15:19:23# total batches: 16500
+09/18/2023, 15:19:23# Epoch 8 | Train Loss: 1.5162 | Train Accuracy: 0.6073
+09/18/2023, 15:19:23# labels of Validation: tensor([ 51,  49,  55,  17,  17,  50,   1, 156], device='cuda:0') torch.Size([8])
+09/18/2023, 15:19:23# predicted of Validation: tensor([ 51,  34,  34,  17,  17,  50, 109, 156], device='cuda:0') torch.Size([8])
+09/18/2023, 15:19:23# labels of 0: tensor([ 51,  49,  55,  17,  17,  50,   1, 156], device='cuda:0') torch.Size([8])
+09/18/2023, 15:19:23# predicted of 0: tensor([ 51,  34,  34,  17,  17,  50, 109, 156], device='cuda:0') torch.Size([8])
+09/18/2023, 15:19:35# labels of Validation: tensor([ 10, 102, 118,  86, 109,  25,  80,  83], device='cuda:0') torch.Size([8])
+09/18/2023, 15:19:35# predicted of Validation: tensor([ 10, 102, 118,  86,  76,  25,  80,  34], device='cuda:0') torch.Size([8])
+09/18/2023, 15:19:47# labels of Validation: tensor([120,  55,  49, 165, 137,  87,  45, 138], device='cuda:0') torch.Size([8])
+09/18/2023, 15:19:47# predicted of Validation: tensor([120,  34, 109, 165, 137,  34,  45, 138], device='cuda:0') torch.Size([8])
+09/18/2023, 15:19:48# Validation Loss: 1.5172 | Validation Accuracy: 0.6088
+
+09/18/2023, 15:19:48# Find a better model!!
+09/18/2023, 15:21:17# labels of 5000: tensor([161,  89, 144, 123,   7,  45, 127,  41], device='cuda:0') torch.Size([8])
+09/18/2023, 15:21:17# predicted of 5000: tensor([161,  89, 109, 123,   7,  45, 127,  41], device='cuda:0') torch.Size([8])
+09/18/2023, 15:22:43# labels of 10000: tensor([141,  47,  89,  81, 141,  20, 135,  54], device='cuda:0') torch.Size([8])
+09/18/2023, 15:22:43# predicted of 10000: tensor([141,  60,  89,   9, 141,  20, 135,  31], device='cuda:0') torch.Size([8])
+09/18/2023, 15:24:13# labels of 15000: tensor([127,  25, 127,   6, 159,  92, 129,   9], device='cuda:0') torch.Size([8])
+09/18/2023, 15:24:13# predicted of 15000: tensor([127,  25, 127,   6, 159,  76, 129,  14], device='cuda:0') torch.Size([8])
+09/18/2023, 15:24:40# total batches: 16500
+09/18/2023, 15:24:40# Epoch 9 | Train Loss: 1.5145 | Train Accuracy: 0.6077
+09/18/2023, 15:24:40# labels of Validation: tensor([105,  94,  29, 151, 109,  83, 157, 145], device='cuda:0') torch.Size([8])
+09/18/2023, 15:24:40# predicted of Validation: tensor([105,  94,  29, 109,  31,  60, 164, 145], device='cuda:0') torch.Size([8])
+09/18/2023, 15:24:40# labels of 0: tensor([105,  94,  29, 151, 109,  83, 157, 145], device='cuda:0') torch.Size([8])
+09/18/2023, 15:24:40# predicted of 0: tensor([105,  94,  29, 109,  31,  60, 164, 145], device='cuda:0') torch.Size([8])
+09/18/2023, 15:24:51# labels of Validation: tensor([153, 131, 160,   7,   4,  86, 100,  10], device='cuda:0') torch.Size([8])
+09/18/2023, 15:24:51# predicted of Validation: tensor([153, 131, 160,   7,  30,  86, 100,  10], device='cuda:0') torch.Size([8])
+09/18/2023, 15:25:02# labels of Validation: tensor([ 55,  40,  44, 158,  57, 129,  26, 164], device='cuda:0') torch.Size([8])
+09/18/2023, 15:25:02# predicted of Validation: tensor([ 92,  40, 109, 150,  30, 129,  26, 109], device='cuda:0') torch.Size([8])
+09/18/2023, 15:25:03# Validation Loss: 1.5154 | Validation Accuracy: 0.6063
+
+09/18/2023, 15:25:03# Find a better model!!
+09/18/2023, 15:26:35# labels of 5000: tensor([ 58,   7, 156, 153,   0,  64, 105, 116], device='cuda:0') torch.Size([8])
+09/18/2023, 15:26:35# predicted of 5000: tensor([ 58,   7, 156, 153,   0, 103, 105, 111], device='cuda:0') torch.Size([8])
+09/18/2023, 15:28:04# labels of 10000: tensor([143,  64,  88, 122, 128,  73, 131,  28], device='cuda:0') torch.Size([8])
+09/18/2023, 15:28:04# predicted of 10000: tensor([152,  93,  93, 122, 128,  73, 131,  28], device='cuda:0') torch.Size([8])
+09/18/2023, 15:29:35# labels of 15000: tensor([ 25, 146,  11,  92, 113,  91, 100,  96], device='cuda:0') torch.Size([8])
+09/18/2023, 15:29:35# predicted of 15000: tensor([ 25, 146, 109,  14, 103,  59, 100,  96], device='cuda:0') torch.Size([8])
+09/18/2023, 15:30:01# total batches: 16500
+09/18/2023, 15:30:01# Epoch 10 | Train Loss: 1.5136 | Train Accuracy: 0.6075
+09/18/2023, 15:30:01# labels of Validation: tensor([138, 127,  21,  38, 152, 138, 151,  14], device='cuda:0') torch.Size([8])
+09/18/2023, 15:30:01# predicted of Validation: tensor([138, 127,  21,  47, 104, 138,  54,  14], device='cuda:0') torch.Size([8])
+09/18/2023, 15:30:01# labels of 0: tensor([138, 127,  21,  38, 152, 138, 151,  14], device='cuda:0') torch.Size([8])
+09/18/2023, 15:30:01# predicted of 0: tensor([138, 127,  21,  47, 104, 138,  54,  14], device='cuda:0') torch.Size([8])
+09/18/2023, 15:30:13# labels of Validation: tensor([140,  85,   8, 106,  15, 116,  57, 127], device='cuda:0') torch.Size([8])
+09/18/2023, 15:30:13# predicted of Validation: tensor([140,  85,   8, 106,  15, 150, 158, 127], device='cuda:0') torch.Size([8])
+09/18/2023, 15:30:26# labels of Validation: tensor([ 73,  32,  54,  96,  41, 140,   5,   7], device='cuda:0') torch.Size([8])
+09/18/2023, 15:30:26# predicted of Validation: tensor([ 73,  32, 111,  96,  41, 140,   5,   7], device='cuda:0') torch.Size([8])
+09/18/2023, 15:30:27# Validation Loss: 1.5152 | Validation Accuracy: 0.6063
+
+09/18/2023, 15:30:27# Find a better model!!
+09/18/2023, 15:31:56# labels of 5000: tensor([ 80,  88, 118,  27, 161,  39, 105, 118], device='cuda:0') torch.Size([8])
+09/18/2023, 15:31:56# predicted of 5000: tensor([ 80,  93, 118,  27, 161,  39, 105, 118], device='cuda:0') torch.Size([8])
+09/18/2023, 15:33:24# labels of 10000: tensor([ 11, 124,  18,  52, 117, 140,  45,  41], device='cuda:0') torch.Size([8])
+09/18/2023, 15:33:24# predicted of 10000: tensor([150, 111,  60,  52, 117, 140,  45,  41], device='cuda:0') torch.Size([8])
+09/18/2023, 15:34:51# labels of 15000: tensor([117, 154,  93,  67,  90,  34,  26, 108], device='cuda:0') torch.Size([8])
+09/18/2023, 15:34:51# predicted of 15000: tensor([117, 154,   8,  78, 113,  54,  26, 131], device='cuda:0') torch.Size([8])
+09/18/2023, 15:35:17# total batches: 16500
+09/18/2023, 15:35:17# Epoch 11 | Train Loss: 1.5137 | Train Accuracy: 0.6071
+09/18/2023, 15:35:17# labels of Validation: tensor([102,  60,  30,  38,  46,  56, 146, 150], device='cuda:0') torch.Size([8])
+09/18/2023, 15:35:17# predicted of Validation: tensor([102, 158,  30, 150,  46,  56, 146,  47], device='cuda:0') torch.Size([8])
+09/18/2023, 15:35:17# labels of 0: tensor([102,  60,  30,  38,  46,  56, 146, 150], device='cuda:0') torch.Size([8])
+09/18/2023, 15:35:17# predicted of 0: tensor([102, 158,  30, 150,  46,  56, 146,  47], device='cuda:0') torch.Size([8])
+09/18/2023, 15:35:30# labels of Validation: tensor([153, 125,  45, 122, 144, 149,  24, 128], device='cuda:0') torch.Size([8])
+09/18/2023, 15:35:30# predicted of Validation: tensor([153, 157,  45, 122,  92, 149,  92, 128], device='cuda:0') torch.Size([8])
+09/18/2023, 15:35:41# labels of Validation: tensor([ 85, 134,  48, 138,  46,  61,  71,  38], device='cuda:0') torch.Size([8])
+09/18/2023, 15:35:41# predicted of Validation: tensor([ 85, 134, 142, 138,  46,  61,  71,  54], device='cuda:0') torch.Size([8])
+09/18/2023, 15:35:42# Validation Loss: 1.5150 | Validation Accuracy: 0.6065
+
+09/18/2023, 15:35:42# Find a better model!!
+09/18/2023, 15:37:14# labels of 5000: tensor([123, 105,  61, 112, 111,  27,   4,  31], device='cuda:0') torch.Size([8])
+09/18/2023, 15:37:14# predicted of 5000: tensor([123, 105,  61,  60, 163,  27,  81,  75], device='cuda:0') torch.Size([8])
+09/18/2023, 15:38:45# labels of 10000: tensor([147, 155, 110,   2,  73,  93,  75, 143], device='cuda:0') torch.Size([8])
+09/18/2023, 15:38:45# predicted of 10000: tensor([147, 155,  64, 109,  73,  64, 124, 150], device='cuda:0') torch.Size([8])
+09/18/2023, 15:40:16# labels of 15000: tensor([ 60,  74,   2,  44, 145,  86,  40,  88], device='cuda:0') torch.Size([8])
+09/18/2023, 15:40:16# predicted of 15000: tensor([152,  97,  87,  54, 145,  86,  40,  93], device='cuda:0') torch.Size([8])
+09/18/2023, 15:40:42# total batches: 16500
+09/18/2023, 15:40:42# Epoch 12 | Train Loss: 1.5139 | Train Accuracy: 0.6071
+09/18/2023, 15:40:42# labels of Validation: tensor([ 87, 116,  31,  16, 137,  28, 105, 116], device='cuda:0') torch.Size([8])
+09/18/2023, 15:40:42# predicted of Validation: tensor([ 30,   9,   4,  16, 137,  28, 105,  47], device='cuda:0') torch.Size([8])
+09/18/2023, 15:40:42# labels of 0: tensor([ 87, 116,  31,  16, 137,  28, 105, 116], device='cuda:0') torch.Size([8])
+09/18/2023, 15:40:42# predicted of 0: tensor([ 30,   9,   4,  16, 137,  28, 105,  47], device='cuda:0') torch.Size([8])
+09/18/2023, 15:40:54# labels of Validation: tensor([ 21, 121,  93,  85,  27, 139,  46, 107], device='cuda:0') torch.Size([8])
+09/18/2023, 15:40:54# predicted of Validation: tensor([ 21,  74, 113,  85,  27, 139,  46, 107], device='cuda:0') torch.Size([8])
+09/18/2023, 15:41:06# labels of Validation: tensor([139, 106,  95, 133,  13, 138, 132,  89], device='cuda:0') torch.Size([8])
+09/18/2023, 15:41:06# predicted of Validation: tensor([139, 106,  95, 133,  13, 138, 132,  89], device='cuda:0') torch.Size([8])
+09/18/2023, 15:41:06# Validation Loss: 1.5146 | Validation Accuracy: 0.6084
+
+09/18/2023, 15:41:06# Find a better model!!
+09/18/2023, 15:42:35# labels of 5000: tensor([ 82, 163, 134, 146, 142,  83, 160, 155], device='cuda:0') torch.Size([8])
+09/18/2023, 15:42:35# predicted of 5000: tensor([ 82, 150, 134, 146,  54,   9, 160, 155], device='cuda:0') torch.Size([8])
+09/18/2023, 15:44:07# labels of 10000: tensor([ 33,  78, 110,  35, 136,  29,  21, 117], device='cuda:0') torch.Size([8])
+09/18/2023, 15:44:07# predicted of 10000: tensor([142,  78, 114,  35, 136,  29,  21, 117], device='cuda:0') torch.Size([8])
+09/18/2023, 15:45:35# labels of 15000: tensor([ 35,  53,  37,  40,  42, 130,  23,  14], device='cuda:0') torch.Size([8])
+09/18/2023, 15:45:35# predicted of 15000: tensor([ 35,  48,  37,  40, 119, 130,  23,  48], device='cuda:0') torch.Size([8])
+09/18/2023, 15:46:03# total batches: 16500
+09/18/2023, 15:46:03# Epoch 13 | Train Loss: 1.5133 | Train Accuracy: 0.6081
+09/18/2023, 15:46:03# labels of Validation: tensor([165,  47,  58,  40,   9,  99,   7,  41], device='cuda:0') torch.Size([8])
+09/18/2023, 15:46:03# predicted of Validation: tensor([165, 164,  58,  40, 109,  99,   7,  41], device='cuda:0') torch.Size([8])
+09/18/2023, 15:46:03# labels of 0: tensor([165,  47,  58,  40,   9,  99,   7,  41], device='cuda:0') torch.Size([8])
+09/18/2023, 15:46:03# predicted of 0: tensor([165, 164,  58,  40, 109,  99,   7,  41], device='cuda:0') torch.Size([8])
+09/18/2023, 15:46:14# labels of Validation: tensor([ 94,  18,  54, 101, 121,  69, 102, 140], device='cuda:0') torch.Size([8])
+09/18/2023, 15:46:14# predicted of Validation: tensor([ 94, 109, 164, 101, 164,  69, 102, 140], device='cuda:0') torch.Size([8])
+09/18/2023, 15:46:26# labels of Validation: tensor([118,  70,  31,  20,  47,  74,  10, 109], device='cuda:0') torch.Size([8])
+09/18/2023, 15:46:26# predicted of Validation: tensor([118,  70,   4,  20,  74, 143,  10,  30], device='cuda:0') torch.Size([8])
+09/18/2023, 15:46:27# Validation Loss: 1.5128 | Validation Accuracy: 0.6083
+
+09/18/2023, 15:46:27# Find a better model!!
+09/18/2023, 15:47:56# labels of 5000: tensor([164, 152,  55,  97,  48, 148, 130,  74], device='cuda:0') torch.Size([8])
+09/18/2023, 15:47:56# predicted of 5000: tensor([ 14,  14,  14,  14,  14, 148, 130, 144], device='cuda:0') torch.Size([8])
+09/18/2023, 15:49:26# labels of 10000: tensor([ 91, 155,  43, 139, 103, 154,   7,  56], device='cuda:0') torch.Size([8])
+09/18/2023, 15:49:26# predicted of 10000: tensor([ 91, 155,  43, 139,  88, 154,   7,  56], device='cuda:0') torch.Size([8])
+09/18/2023, 15:50:55# labels of 15000: tensor([ 53,   8, 139, 135, 115,  67,  80,  68], device='cuda:0') torch.Size([8])
+09/18/2023, 15:50:55# predicted of 15000: tensor([164, 103, 139, 135, 115,  67,  80, 103], device='cuda:0') torch.Size([8])
+09/18/2023, 15:51:21# total batches: 16500
+09/18/2023, 15:51:21# Epoch 14 | Train Loss: 1.5118 | Train Accuracy: 0.6084
+09/18/2023, 15:51:21# labels of Validation: tensor([159,  37, 124,  80, 121, 111, 124,  20], device='cuda:0') torch.Size([8])
+09/18/2023, 15:51:21# predicted of Validation: tensor([159,  37, 157,  80, 119, 119, 119,  20], device='cuda:0') torch.Size([8])
+09/18/2023, 15:51:21# labels of 0: tensor([159,  37, 124,  80, 121, 111, 124,  20], device='cuda:0') torch.Size([8])
+09/18/2023, 15:51:21# predicted of 0: tensor([159,  37, 157,  80, 119, 119, 119,  20], device='cuda:0') torch.Size([8])
+09/18/2023, 15:51:34# labels of Validation: tensor([137,  47,  97,  24, 102,  85, 130, 127], device='cuda:0') torch.Size([8])
+09/18/2023, 15:51:34# predicted of Validation: tensor([137,   2, 157, 119, 102,  85, 130, 127], device='cuda:0') torch.Size([8])
+09/18/2023, 15:51:46# labels of Validation: tensor([105, 126, 165, 158, 143,  13, 157, 146], device='cuda:0') torch.Size([8])
+09/18/2023, 15:51:46# predicted of Validation: tensor([105, 126, 165, 119, 152,  13, 119, 146], device='cuda:0') torch.Size([8])
+09/18/2023, 15:51:47# Validation Loss: 1.5105 | Validation Accuracy: 0.6073
+
+09/18/2023, 15:51:47# Find a better model!!
+09/18/2023, 15:53:16# labels of 5000: tensor([ 35,  13,  31, 103, 143, 117,   8, 143], device='cuda:0') torch.Size([8])
+09/18/2023, 15:53:16# predicted of 5000: tensor([ 35,  13, 152,  88, 152, 117, 110, 152], device='cuda:0') torch.Size([8])
+09/18/2023, 15:54:48# labels of 10000: tensor([ 36,  51,  91, 151, 153,  59,  50, 150], device='cuda:0') torch.Size([8])
+09/18/2023, 15:54:48# predicted of 10000: tensor([ 60,  51, 108, 121, 153, 108,  50,  60], device='cuda:0') torch.Size([8])
+09/18/2023, 15:56:13# labels of 15000: tensor([100, 139, 126, 151,  51,   6,  75,  42], device='cuda:0') torch.Size([8])
+09/18/2023, 15:56:13# predicted of 15000: tensor([100, 139, 126, 142,  51,   6, 142,  11], device='cuda:0') torch.Size([8])
+09/18/2023, 15:56:38# total batches: 16500
+09/18/2023, 15:56:38# Epoch 15 | Train Loss: 1.5094 | Train Accuracy: 0.6080
+09/18/2023, 15:56:38# labels of Validation: tensor([ 72,  38,  24,   5,  56, 160, 132,  70], device='cuda:0') torch.Size([8])
+09/18/2023, 15:56:38# predicted of Validation: tensor([ 72, 157,  14,   5,  56, 160, 132,  70], device='cuda:0') torch.Size([8])
+09/18/2023, 15:56:38# labels of 0: tensor([ 72,  38,  24,   5,  56, 160, 132,  70], device='cuda:0') torch.Size([8])
+09/18/2023, 15:56:38# predicted of 0: tensor([ 72, 157,  14,   5,  56, 160, 132,  70], device='cuda:0') torch.Size([8])
+09/18/2023, 15:56:49# labels of Validation: tensor([159,  85, 151, 127,   1,  67,  87,  35], device='cuda:0') torch.Size([8])
+09/18/2023, 15:56:49# predicted of Validation: tensor([159,  85,  47, 127,  54,  78, 157,  35], device='cuda:0') torch.Size([8])
+09/18/2023, 15:57:00# labels of Validation: tensor([ 92, 105,  52, 148,  71,  85,  73, 111], device='cuda:0') torch.Size([8])
+09/18/2023, 15:57:00# predicted of Validation: tensor([157, 105,  52, 148,  71,  85,  73, 157], device='cuda:0') torch.Size([8])
+09/18/2023, 15:57:01# Validation Loss: 1.5101 | Validation Accuracy: 0.6081
+
+09/18/2023, 15:57:01# Find a better model!!
+09/18/2023, 15:58:21# labels of 5000: tensor([ 64, 161,  19,   8,  99, 162,  60,  21], device='cuda:0') torch.Size([8])
+09/18/2023, 15:58:21# predicted of 5000: tensor([ 91, 161,  19, 110,  99, 121, 121,  21], device='cuda:0') torch.Size([8])
+09/18/2023, 15:59:41# labels of 10000: tensor([145, 121,  38,  81,   4, 132,  35, 139], device='cuda:0') torch.Size([8])
+09/18/2023, 15:59:41# predicted of 10000: tensor([145,   2,   2, 152,   2, 132,  35, 139], device='cuda:0') torch.Size([8])
+09/18/2023, 16:00:41# labels of 15000: tensor([125,  16,  34, 150, 164,   4,  20, 138], device='cuda:0') torch.Size([8])
+09/18/2023, 16:00:41# predicted of 15000: tensor([ 38,  16, 150,  47,   1,   1,  20, 138], device='cuda:0') torch.Size([8])
+09/18/2023, 16:01:00# total batches: 16500
+09/18/2023, 16:01:00# Epoch 16 | Train Loss: 1.5061 | Train Accuracy: 0.6098
+09/18/2023, 16:01:00# labels of Validation: tensor([ 51,  21,  62, 128,  25, 114,  16, 160], device='cuda:0') torch.Size([8])
+09/18/2023, 16:01:00# predicted of Validation: tensor([ 51,  21,  62, 128,  25,  68,  16, 160], device='cuda:0') torch.Size([8])
+09/18/2023, 16:01:00# labels of 0: tensor([ 51,  21,  62, 128,  25, 114,  16, 160], device='cuda:0') torch.Size([8])
+09/18/2023, 16:01:00# predicted of 0: tensor([ 51,  21,  62, 128,  25,  68,  16, 160], device='cuda:0') torch.Size([8])
+09/18/2023, 16:01:08# labels of Validation: tensor([125,  88,   8, 105, 135,  68, 139,   9], device='cuda:0') torch.Size([8])
+09/18/2023, 16:01:08# predicted of Validation: tensor([ 49,  68,  68, 105, 135,  68, 139, 164], device='cuda:0') torch.Size([8])
+09/18/2023, 16:01:16# labels of Validation: tensor([  4, 128, 117,  89,  40, 164, 157,   2], device='cuda:0') torch.Size([8])
+09/18/2023, 16:01:16# predicted of Validation: tensor([164, 128, 117,  89,  40, 164,  87, 164], device='cuda:0') torch.Size([8])
+09/18/2023, 16:01:17# Validation Loss: 1.5061 | Validation Accuracy: 0.6088
+
+09/18/2023, 16:01:17# Find a better model!!
+09/18/2023, 16:02:16# labels of 5000: tensor([104, 163,  26,  46,  32, 125,  19,  16], device='cuda:0') torch.Size([8])
+09/18/2023, 16:02:16# predicted of 5000: tensor([152,  38,  26,  46,  32, 152,  19,  16], device='cuda:0') torch.Size([8])
+09/18/2023, 16:03:15# labels of 10000: tensor([ 59,  41,  97, 142,  80, 115,   9,  25], device='cuda:0') torch.Size([8])
+09/18/2023, 16:03:15# predicted of 10000: tensor([ 59,  41, 152, 152,  80, 115, 152,  25], device='cuda:0') torch.Size([8])
+09/18/2023, 16:04:15# labels of 15000: tensor([ 81, 102, 142,  26,   1, 149,  73,  73], device='cuda:0') torch.Size([8])
+09/18/2023, 16:04:15# predicted of 15000: tensor([ 87, 102, 158,  26, 158, 149,  73,  73], device='cuda:0') torch.Size([8])
+09/18/2023, 16:04:33# total batches: 16500
+09/18/2023, 16:04:33# Epoch 17 | Train Loss: 1.5022 | Train Accuracy: 0.6107
+09/18/2023, 16:04:33# labels of Validation: tensor([  7,  87,  69,   4,  25, 151,  54, 126], device='cuda:0') torch.Size([8])
+09/18/2023, 16:04:33# predicted of Validation: tensor([  7, 157,  69, 157,  25,  60, 124, 126], device='cuda:0') torch.Size([8])
+09/18/2023, 16:04:33# labels of 0: tensor([  7,  87,  69,   4,  25, 151,  54, 126], device='cuda:0') torch.Size([8])
+09/18/2023, 16:04:33# predicted of 0: tensor([  7, 157,  69, 157,  25,  60, 124, 126], device='cuda:0') torch.Size([8])
+09/18/2023, 16:04:42# labels of Validation: tensor([150,  97,  75,  34, 162, 157, 152, 161], device='cuda:0') torch.Size([8])
+09/18/2023, 16:04:42# predicted of Validation: tensor([ 60,  54, 157, 157, 157, 157,  60, 161], device='cuda:0') torch.Size([8])
+09/18/2023, 16:04:50# labels of Validation: tensor([ 63,  27, 118,  68,  28, 164,  97, 122], device='cuda:0') torch.Size([8])
+09/18/2023, 16:04:50# predicted of Validation: tensor([ 63,  27, 118,  93,  28, 157, 157, 122], device='cuda:0') torch.Size([8])
+09/18/2023, 16:04:51# Validation Loss: 1.4976 | Validation Accuracy: 0.6108
+
+09/18/2023, 16:04:51# Find a better model!!
+09/18/2023, 16:05:50# labels of 5000: tensor([ 27, 128, 158,  81, 148, 128,  61,  90], device='cuda:0') torch.Size([8])
+09/18/2023, 16:05:50# predicted of 5000: tensor([ 27, 128, 158,  49, 148, 128,  61,  64], device='cuda:0') torch.Size([8])
+09/18/2023, 16:06:48# labels of 10000: tensor([122,  25, 108,  63,  30,  66,   6,  64], device='cuda:0') torch.Size([8])
+09/18/2023, 16:06:48# predicted of 10000: tensor([122,  25, 131,  63,  14,  66,   6, 113], device='cuda:0') torch.Size([8])
+09/18/2023, 16:07:38# labels of Test: tensor([1, 1, 1, 1, 1, 1, 1, 1], device='cuda:0') torch.Size([8])
+09/18/2023, 16:07:38# predicted of Test: tensor([157,   9, 157,   9, 157,  60,  60,  54], device='cuda:0') torch.Size([8])
+09/18/2023, 16:07:38# labels of 0: tensor([1, 1, 1, 1, 1, 1, 1, 1], device='cuda:0') torch.Size([8])
+09/18/2023, 16:07:38# predicted of 0: tensor([157,   9, 157,   9, 157,  60,  60,  54], device='cuda:0') torch.Size([8])
+09/18/2023, 16:07:38# labels: tensor([1, 1, 1, 1, 1, 1, 1, 1], device='cuda:0') torch.Size([8])
+09/18/2023, 16:07:38# predicted: tensor([157,   9, 157,   9, 157,  60,  60,  54], device='cuda:0') torch.Size([8])
+09/18/2023, 16:07:46# labels of Test: tensor([83, 83, 83, 83, 83, 83, 83, 83], device='cuda:0') torch.Size([8])
+09/18/2023, 16:07:46# predicted of Test: tensor([157, 157, 157, 157, 157,  60, 157, 124], device='cuda:0') torch.Size([8])
+09/18/2023, 16:07:54# labels of Test: tensor([163, 163, 163, 163, 163, 163, 163, 163], device='cuda:0') torch.Size([8])
+09/18/2023, 16:07:54# predicted of Test: tensor([157,  54, 157,  54, 124,  60,  54, 124], device='cuda:0') torch.Size([8])
+09/18/2023, 16:07:54# Test Accuracy: 61.00606060606061 %
+
+
+
+09/18/2023, 16:07:56# report path: classification_report/classification_report-transR_50-graphSAGE-0.xlsx
+09/18/2023, 16:07:56# label path: classification_report/mapped_true_predicted_labels-transR_50-graphSAGE-0.xlsx
+09/18/2023, 16:07:56# mapped_report:
+                                                precision    recall  f1-score   support
+
+T1003.001_0ef4cc7b-611c-4237-b20b-db36b6906554       1.00      1.00      1.00       100
+    T1003.001_35d92515122effdd73801c6ac3021da7       1.00      1.00      1.00       100
+    T1003.002_5a484b65c247675e3b7ada4ba648d376       1.00      1.00      1.00       100
+    T1003.002_7fa4ea18694f2552547b65e23952cabb       1.00      1.00      1.00       100
+    T1003.003_9f73269695e54311dd61dc68940fb3e1       0.00      0.00      0.00       100
+    T1003.003_f049b89533298c2d6cd37a940248b219       0.00      0.00      0.00       100
+        T1003_18f31c311ac208802e88ab8d5af8603e       1.00      1.00      1.00       100
+        T1007_9d03c91bdae5a80f17f89c987942b5a8       1.00      1.00      1.00       100
+    T1007_c6607391-d02c-44b5-9b13-d3492ca58599       0.00      0.00      0.00       100
+        T1007_d6bb2a19da7246731ed9c44831b135f8       0.00      0.00      0.00       100
+    T1016_14a21534-350f-4d83-9dd7-3c56b93a0c17       0.00      0.00      0.00       100
+        T1016_71b3d2945679566b9d94d8cb11df4b70       0.00      0.00      0.00       100
+        T1016_7d8ee68f0e9731db82964f558f614608       0.96      0.47      0.63       100
+    T1016_921055f4-5970-4707-909e-62f594234d91       0.00      0.00      0.00       100
+    T1016_a0676fe1-cd52-482e-8dde-349b73f9aa69       0.00      0.00      0.00       100
+    T1016_e8017c46-acb8-400c-a4b5-b3362b5b5baa       0.02      0.55      0.04       100
+    T1018_26c8b8b5-7b5b-4de1-a128-7d37fb14f517       0.00      0.00      0.00       100
+        T1018_a44bb43474728496276d5d73aa14588f       0.00      0.00      0.00       100
+        T1018_ac20e592bc912bddff4d6b88289095f0       0.00      0.00      0.00       100
+    T1021.001_dd67068b052fa553ad4a0ac7d6a5ea89       1.00      1.00      1.00       100
+    T1033_bd527b63-9f9e-46e0-9816-b8434d2b8989       0.02      0.08      0.03       100
+    T1033_c0da588f-79f0-4263-8998-7496b1a40596       0.02      0.22      0.04       100
+    T1036.003_04e8d83e7badf098d50800d6aa1dd487       1.00      1.00      1.00       100
+    T1036.003_f5ef8466e5ebcd2ae03f338d9416069c       1.00      1.00      1.00       100
+    T1036.004_1f0614ea5c4af6faf1b44570f5f22f8a       0.00      0.00      0.00       100
+    T1036.004_7de3d7b4922a7b996d8df36fb22bb118       0.00      0.00      0.00       100
+    T1037.001_62cfa90fb03a6bc1a6ebcce8a3ea81b7       1.00      1.00      1.00       100
+        T1040_6881a4589710d53f0c146e91db513f01       1.00      1.00      1.00       100
+        T1047_09e0f9cf2eb803a1c35deeecf3665fad       0.00      0.00      0.00       100
+        T1047_6935e41353aa781bb723462d26114c44       0.00      0.00      0.00       100
+        T1047_ac122553ab4426ea3362bb4a97d31bfd       0.00      0.00      0.00       100
+        T1047_ac2764f7a67a9ce92b54e8e59b361838       0.00      0.00      0.00       100
+        T1047_b0255b5120cbabc062d8d4510a142c3b       0.00      0.00      0.00       100
+        T1047_ed736a123da6fb2aab22cfd4f437e8b5       0.00      0.00      0.00       100
+        T1047_f4b0b4129560ea66f9751275e82f6bab       0.00      0.00      0.00       100
+    T1049_638fb6bb-ba39-4285-93d1-7e4775b033a8       0.00      0.00      0.00       100
+        T1049_a14392d713dffba6a397682ff83259a0       0.41      0.29      0.34       100
+    T1053.005_5db2884b6ca3ab932848f295a3896dc0       0.00      0.00      0.00       100
+    T1053.005_ee454be9197890de62705ce6255933fd       0.00      0.00      0.00       100
+T1055.001_a74bc239-a196-4f7e-8d5c-fe8c0266071c       0.00      0.00      0.00       100
+T1055.002_e5bcefee-262d-4568-a261-e8a20855ec81       0.00      0.00      0.00       100
+    T1057_5a39d7ed-45c9-4a79-b581-e5fb99e24f65       0.00      0.00      0.00       100
+    T1057_8adf02e8-6e71-4244-886c-98c402857404       1.00      1.00      1.00       100
+        T1057_b2a1e430ca6d36eb5af2fe666e769847       0.00      0.00      0.00       100
+        T1057_f8de05d1741dcc468f772ab0ff4dac72       0.11      0.01      0.02       100
+T1059.001_55678719-e76e-4df9-92aa-10655bbd1cf4       1.00      1.00      1.00       100
+    T1059.001_6efbccc1869e8cd618c0d3ecda407d5f       1.00      1.00      1.00       100
+T1059.001_702bfdd2-9947-4eda-b551-c3a1ea9a59a2       1.00      1.00      1.00       100
+T1059.001_bfff9006-d1fb-46ce-b173-92cb04e9a031       1.00      1.00      1.00       100
+T1059.001_ccdb8caf-c69e-424b-b930-551969450c57       1.00      1.00      1.00       100
+T1059.001_e5f9de8f-3df1-4e78-ad92-a784e3f6770d       1.00      1.00      1.00       100
+    T1059.003_6c318ef0339d74d909ad556681b6493e       1.00      1.00      1.00       100
+    T1059.003_f38e58deb7ad20b5538ca40db7b7b4f8       1.00      1.00      1.00       100
+T1069.001_5c4dd985-89e3-4590-9b57-71fed66ff4e2       1.00      1.00      1.00       100
+    T1069.001_a1f48fa3ddee658b29b414523c9a295b       0.10      0.73      0.18       100
+    T1069.002_6103e503cb444bc7b4187704f2035708       0.33      0.98      0.49       100
+    T1070.005_1f91076e2be2014cc7b4f1296de02fd6       1.00      1.00      1.00       100
+    T1071.001_24c3b7b004401d839a5c337201da3484       1.00      1.00      1.00       100
+T1074.001_4e97e699-93d7-4040-b5a3-2e906a58199e       1.00      1.00      1.00       100
+T1074.001_6469befa-748a-4b9c-a96d-f191fde47d89       1.00      1.00      1.00       100
+    T1074.001_e6dfc7e89359ac6fa6de84b0e1d5762e       1.00      1.00      1.00       100
+    T1078.001_d0ca00832890baa1d42322cf70fcab1a       0.00      0.00      0.00       100
+    T1082_29451844-9b76-4e16-a9ee-d6feab4b24db       0.00      0.00      0.00       100
+    T1083_52177cc1-b9ab-4411-ac21-2eadc4b5d3b8       1.00      1.00      1.00       100
+    T1083_6e1a53c0-7352-4899-be35-fa7f364d5722       0.00      0.00      0.00       100
+    T1087.001_6334877e8e3ba48f7835d4856d90a282       1.00      1.00      1.00       100
+T1087.001_feaced8f-f43f-452a-9500-a5219488abb8       0.00      0.00      0.00       100
+    T1090.001_ba343199a4f15ed6b57eb52412f62e4e       0.93      0.99      0.96       100
+        T1105_0856c235a1d26113d4f2d92e39c9a9f8       1.00      1.00      1.00       100
+        T1105_1095434782a00c8a4772a11e625bcf5d       1.00      1.00      1.00       100
+        T1105_4f683658f161ccdc51337c470d32bab9       1.00      1.00      1.00       100
+    T1105_60f63260-39bb-4136-87a0-b6c2dca799fc       1.00      1.00      1.00       100
+        T1105_c521e0a70b243a0cf9217907ca3c6d27       1.00      1.00      1.00       100
+        T1105_c76968acda4aa1673dadcd67f3ab7664       1.00      1.00      1.00       100
+        T1105_e6715e61f5df646692c624b3499384c4       1.00      1.00      1.00       100
+    T1105_eb814e03-811a-467a-bc6d-dcd453750fa2       1.00      1.00      1.00       100
+        T1112_257313a3c93e3bb7dfb60d6753b09e34       1.00      1.00      1.00       100
+        T1112_34041639e6e501856ecaf5969ee29c76       1.00      1.00      1.00       100
+        T1112_35c0360d226cf38104f300d9d57ce60e       1.00      1.00      1.00       100
+        T1112_4bfb5f265a5ce07af6bf10da113af7db       1.00      1.00      1.00       100
+        T1112_7fe6a66d03f4dbfc022609ba311c2b11       1.00      1.00      1.00       100
+        T1112_ba6f6214dbd17c54001e0a163b60f151       1.00      1.00      1.00       100
+        T1112_cab7b85611a290c0769546bfa9d6f962       1.00      1.00      1.00       100
+        T1112_cd8be0e6b873919da25530a2c7ea6750       1.00      1.00      1.00       100
+        T1112_e74d2fb4ef5fa6c766a4151554033697       1.00      1.00      1.00       100
+        T1112_e7a987cbef27263e666e5b096488dc55       1.00      1.00      1.00       100
+        T1112_fa4ba6a06b4a5cd955ea5a60fae24281       1.00      1.00      1.00       100
+        T1112_fd992e8ecfdac9b56dd6868904044827       1.00      1.00      1.00       100
+    T1113_316251ed-6a28-4013-812b-ddf5b5b007f8       1.00      1.00      1.00       100
+        T1115_70795de7cbb842edb029b3378c27c008       1.00      1.00      1.00       100
+    T1115_b007fe0c-c6b0-4fda-915c-255bbc070de2       0.00      0.00      0.00       100
+        T1119_344e7eaf650763e0d3e9f02e62c1cf4b       1.00      1.00      1.00       100
+        T1119_7121cdf93b951311be9d7078c602efdc       1.00      1.00      1.00       100
+        T1120_7b9c7afaefa59aab759b49af0d699ac1       1.00      1.00      1.00       100
+        T1123_372e6f46fca18e4f1b43209c20ffafa2       1.00      1.00      1.00       100
+    T1124_fa6e8607-e0b1-425d-8924-9b894da5a002       0.00      0.00      0.00       100
+        T1125_da86001b5081fcf773d8e62f22cf2b00       1.00      1.00      1.00       100
+    T1135_530e47c6-8592-42bf-91df-c59ffbd8541b       0.00      0.00      0.00       100
+    T1135_deeac480-5c2a-42b5-90bb-41675ee53c7e       0.00      0.00      0.00       100
+    T1137.002_e2af3c3ab1b0f659c874b8af58c49759       1.00      1.00      1.00       100
+        T1137_12ad9edefc86af07700fbf49bfdac6ba       1.00      1.00      1.00       100
+        T1201_38f6f0e50a6b196140ec40d3dc9cc9e6       0.00      0.00      0.00       100
+        T1201_57296a2ddbeb7423c05feef2fe972111       0.00      0.00      0.00       100
+    T1204.002_522f3f35cd013e63830fa555495a0081       1.00      1.00      1.00       100
+        T1217_69bbe2183fa09c00ccaac62d48e214f8       1.00      1.00      1.00       100
+        T1217_f7a0f7d704aa52a764d9d1bee81e65d6       0.00      0.00      0.00       100
+        T1219_7dabcbecab0334b115feefab1630f84a       1.00      1.00      1.00       100
+        T1219_af8cb2bf9b436aae5c106a0a9c207e14       1.00      1.00      1.00       100
+        T1219_f1b3fca18d7465cd10e5a7477a3bf97d       1.00      1.00      1.00       100
+    T1482_6131397e-7765-424e-a594-3d7fb2d93a6a       1.00      1.00      1.00       100
+        T1482_cfb61005899996469ae3023796792ca5       0.00      0.00      0.00       100
+        T1486_d82ceb9939d3d920ee550187ad8235c8       1.00      1.00      1.00       100
+        T1490_2d53d6fabd39bf9c70b0dfcdfbbc926d       0.00      0.00      0.00       100
+        T1490_8467c994685ccf178db166964bd80fab       0.15      0.09      0.11       100
+        T1490_9e5e4c0655fd1b5be88bd40b8251175f       0.00      0.00      0.00       100
+        T1490_c156ac5c9fa67080365268d95f29053d       0.00      0.00      0.00       100
+        T1490_c8f329d2847ede593b6cb4a1ec6120fb       1.00      1.00      1.00       100
+        T1490_e90756bb6dcd21462dc4cc452661df91       0.02      0.12      0.03       100
+    T1491_47d08617-5ce1-424a-8cc5-c9c978ce6bf9       1.00      1.00      1.00       100
+    T1491_68235976-2404-42a8-9105-68230cfef562       1.00      1.00      1.00       100
+    T1496_46da2385-cf37-49cb-ba4b-a739c7a19de4       1.00      1.00      1.00       100
+T1497.001_1258b063-27d6-489b-a677-4807faacf868       0.02      0.07      0.04       100
+T1497.001_5dc841fd-28ad-40e2-b10e-fb007fe09e81       0.00      0.00      0.00       100
+T1497.001_7a6ba833-de40-466a-8969-5c37b13603e0       0.00      0.00      0.00       100
+    T1499_2fe2d5e6-7b06-4fc0-bf71-6966a1226731       0.00      0.00      0.00       100
+T1518.001_2dece965-37a0-4f70-a391-0f30e3331aba       0.00      0.00      0.00       100
+    T1518.001_33a24ff44719e6ac0614b58f8c9a7c72       0.00      0.00      0.00       100
+    T1518.001_b8453a5fe06b24aea12b27592d5c3d3a       0.00      0.00      0.00       100
+        T1518_8ddfaf982ab359cda13626b870ccb339       1.00      1.00      1.00       100
+    T1518_c9be8043-a445-4cbf-b77b-ed7bb007fc7c       1.00      1.00      1.00       100
+        T1531_aa6b15485a5f50ced34d87fda177b758       0.00      0.00      0.00       100
+        T1531_b25ae80dad74142fafb510e9c1949ace       0.07      0.12      0.09       100
+    T1546.013_f9a968af61d36983448c74cca5464e17       1.00      1.00      1.00       100
+    T1547.001_0dbdf1a2a87e718a6ac8a8e3415a7fac       1.00      1.00      1.00       100
+    T1547.001_163b023f43aba758d36f524d146cb8ea       1.00      1.00      1.00       100
+    T1547.001_1f15ab22c39a9b6bb2bb0d77276dfcb3       1.00      1.00      1.00       100
+    T1547.001_4b71ebb2f6f6a01235ba240fa40ce978       1.00      1.00      1.00       100
+    T1547.001_777043894e42d2aae3881e63f6c76d33       1.00      1.00      1.00       100
+    T1547.001_d3ef4145e4144fd694514b1c5cc17350       1.00      1.00      1.00       100
+    T1547.004_0856714c9810ac55b53e9964d02958a0       1.00      1.00      1.00       100
+    T1547.004_aa147165f6c116cb0b0f944abe1db8ce       1.00      1.00      1.00       100
+    T1547.009_501af516bd8b24fee0c7c650ae5cc861       1.00      1.00      1.00       100
+    T1547.009_b6e5c895c6709fe289352ee23f062229       1.00      1.00      1.00       100
+    T1547.010_4593d72a5145e3f494421ac772d37464       1.00      1.00      1.00       100
+        T1547_fe9eeee9a7b339089e5fa634b08522c1       1.00      1.00      1.00       100
+T1548.002_665432a4-42e7-4ee1-af19-a9a8c9455d0c       1.00      1.00      1.00       100
+    T1552.002_3e5b04b8ee0a1a4950da8f35d95e65fc       0.00      0.00      0.00       100
+        T1560_a1ee301b0508747b468d578a14e5c1a5       1.00      1.00      1.00       100
+    T1562.001_43e3334362b140924f001b256b229ee5       1.00      1.00      1.00       100
+    T1562.002_6a8d25d65a7d481dc479f89c62af1e6a       1.00      1.00      1.00       100
+    T1562.002_94f51bf01a7036fe02d07b4c18967669       0.00      0.00      0.00       100
+    T1562.004_280003641a5cddf916c4f2bf605a71d3       0.22      0.02      0.04       100
+    T1562.004_41627f71f968225b9f162cb76d16bd9d       1.00      1.00      1.00       100
+    T1562.004_5b93df032e230056c21a3e57334f77d1       0.00      0.00      0.00       100
+    T1562.004_8d0a4585e7c4646185a912b14cd9cb46       0.00      0.00      0.00       100
+    T1562.004_8fe59e288f10a486dc8b44bc872019ff       1.00      1.00      1.00       100
+    T1564.001_66a5fd5f244819181f074dd082a28905       0.00      0.00      0.00       100
+    T1564.001_dce51e632abdfe5392c7c1f942ac9273       0.50      1.00      0.67       100
+    T1564.003_9a2edad4053a2b59fb9167a9bc29e7dc       0.99      0.92      0.95       100
+    T1564.004_28862487a99f5f89bc0d68c87396c7e9       1.00      1.00      1.00       100
+    T1564.004_76b6066fe170d38215251102e42be973       1.00      1.00      1.00       100
+        T1564_dedfa0a54c9c13ce5714a0dc2e1f5d1a       0.00      0.00      0.00       100
+    T1566.001_1afaec09315ab71fdfb167175e8a019a       1.00      1.00      1.00       100
+    T1574.001_63bbedafba2f541552ac3579e9e3737b       1.00      1.00      1.00       100
+    T1574.011_72249c1e9ffe7d8f30243d838e0791ca       1.00      1.00      1.00       100
+
+                                      accuracy                           0.61     16500
+                                     macro avg       0.60      0.61      0.60     16500
+                                  weighted avg       0.60      0.61      0.60     16500
+
