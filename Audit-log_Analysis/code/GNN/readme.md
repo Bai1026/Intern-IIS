@@ -25,13 +25,19 @@
 - **delete.py**: for debugging
 
 ## Training:
-> have 4 types of training
-- **code_exp1-2**: use GAT or GCN model to train do the experiment 1 and 2
-- **code_exp3**:  use GAT or GCN model to train do the experiment 3
+> There are 4 types of training.  
+> All of them have 11 versions of embedding for the node and edge id.  
 
-- **graphSAGE_exp1-2**: use GraphSAGE model to train do the experiment 1 and 2
-- **graphSAGE_exp3**: use GraphSAGE model to train do the experiment 3
+> The **checkpoint** of the best performance would be stored at: ```../checkpoint_model_type/best_model_model_type_embedding_type.pt```  
+> The **log message** contains the training message would be stored at:  
+```../log_message/time_modeltype.log```  
+> There would be **classification report** and **true-prediction comparison** files created and be stored at: ```../output_data_graphSAGE/exp_type/embedding_type/output_file```  
 
+- **code_exp1-2**: use GAT or GCN model to do the experiment 1 and 2
+- **code_exp3**:  use GAT or GCN model to do the experiment 3
+
+- **graphSAGE_exp1-2**: use GraphSAGE model to do the experiment 1 and 2
+- **graphSAGE_exp3**: use GraphSAGE model to do the experiment 3
 
 
 ## Prerequisites:
