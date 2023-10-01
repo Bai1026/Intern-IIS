@@ -5,24 +5,32 @@
 - **Experiment 3**: do the **edge classification** with the the 165 APs and 1 benign. And the graph contains the neighbor benign nodes.  
 
 - Example graph of experiment 1 and 2:
-<img src="https://github.com/Bai1026/Intern-IIS/blob/main/Audit-log_Analysis/Figure/graph_self/T1003.002_7fa4ea18694f2552547b65e23952cabb.png" alt="error pic" width="650" height="650">
+<img src="https://github.com/Bai1026/Intern-IIS/blob/main/Audit-log_Analysis/Figure/graph_self/T1003.002_7fa4ea18694f2552547b65e23952cabb.png" alt="error pic" width="550" height="550">
 
 - Example graph of experiment 3:  
-<img src="https://github.com/Bai1026/Intern-IIS/blob/main/Audit-log_Analysis/Figure/graph_with_benign/1003.001_0ef4cc7b-611c-4237-b20b-db36b6906554.png" alt="error pic" width="650" height="650">
+<img src="https://github.com/Bai1026/Intern-IIS/blob/main/Audit-log_Analysis/Figure/graph_with_benign/1003.001_0ef4cc7b-611c-4237-b20b-db36b6906554.png" alt="error pic" width="550" height="550">
 
 > This part contains 2 folders:
 - [Processing](https://github.com/Bai1026/Intern-IIS/tree/main/Audit-log_Analysis/code/GNN/processing)
 - [Training](https://github.com/Bai1026/Intern-IIS/tree/main/Audit-log_Analysis/code/GNN/training)
 
 ## Processing:  
-- **add_benign.py**: add the string "benign" at the last of each row like other APs' format.
-- **add_entity.py**: add the node's entity based on the mapping file.
-- **label_filter.py**: filter out the data with the specific label like "benign", "T1005.xxx" and "T1046.xxx".
-- **merge.py**: merge the data of the original data with the prediction based on the sigma rule to do the comparision.
+- **change_graph_new.py**: change the original data to the input format of our training.
+  - format of the result:  
+    ```{"label": 9, "num_nodes": 3, "node_feat": [12, 20, 965], "edge_attr": [9, 7], "edge_index": [[0, 0], [1, 2]]}```
+- **change_name_new.py**: change the label accroading to the mapping.txt
+- **split.py**: split the training data with the ratio of ```8:1:1```
+- **0_Graph_quick_look.ipynb**: make the benign graph with 4 specific versions.
+  - 4 version of benign:  
+    <img src="https://github.com/Bai1026/Intern-IIS/blob/main/Audit-log_Analysis/Figure/benign_version.png" alt="error pic" width="200" height="200">
+    
+- **add_embedding.py**: turn the node and edge features from original id to embedding of **Trans family**.
+- **add_embedding_secure.ipynb**: turn the node and edge features from original id to embedding of **secureBERT family**.
 
-- **show.py**: for debugging
-- **delete_row.py**: for debugging
-- **delete.py**: for debugging
+- **merge.py**: for debugging.
+- **check_num_of_files**: for debugging.
+- **debug.py**: for debugging.
+- **mapping.txt**: record the mapping of the true TTPs with their encoded label(int).
 
 ## Training:
 > There are 4 types of training.  
