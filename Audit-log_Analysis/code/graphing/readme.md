@@ -1,10 +1,19 @@
 # This is the readme of the graphing code of this project  
-> These codes aim to **visualize the graph** we used in our GNN, including the node type, edge type → by shape
+> These codes aim to **visualize the graph** we used in our GNN, including the node type, edge type → by shape  
+> The data should be preprocessed through the previous code [here](https://github.com/Bai1026/Intern-IIS/tree/main/Audit-log_Analysis/code/GNN/processing)  
 > This part contains 2 folders:
-- [graphing](https://github.com/Bai1026/Intern-IIS/tree/main/Audit-log_Analysis/code/graphing/graphing_code)
-- [processing](https://github.com/Bai1026/Intern-IIS/tree/main/Audit-log_Analysis/code/graphing/processing_code)
-> 
+- [Graphing](https://github.com/Bai1026/Intern-IIS/tree/main/Audit-log_Analysis/code/graphing/graphing_code)
+- [Processing](https://github.com/Bai1026/Intern-IIS/tree/main/Audit-log_Analysis/code/graphing/processing_code)
+
 ## Processing:  
+- **add_benign.py**: add the string "benign" at the last of each row like other APs' format.
+- **add_entity.py**: add the node's entity based on the mapping file.
+- **label_filter.py**: filter out the data with the specific label like "benign", "T1005.xxx" and "T1046.xxx".
+- **merge.py**: merge the data of the original data with the prediction based on the sigma rule to do the comparision.
+
+- **show.py**: for debugging
+- **delete_row.py**: for debugging
+- **delete.py**: for debugging
 
 ## Graphing:
 - **big_graph.py**: the graph contains all APs and generate in a single png file.  
