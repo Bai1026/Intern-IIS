@@ -6,10 +6,13 @@ test_data = []
 validation_data = []
 train_data = []
 
-embedding = 'transR_50'
+embedding = 'secureBERT_150'
+# embeddings = ['transE_50', 'transE_100', 'transE_150', "transH_100", "transH_150"]
 # 讀取原始數據
 # with open("../data_new/test_graph/graph_without_benign_embedded.jsonl", "r") as f:
 # with open("../data_new/graph/transE_50_embedded.jsonl", "r") as f:
+
+# for embedding in tqdm(embeddings):
 with open(f"../data_new/exp3/graph/{embedding}_embedded.jsonl", "r") as f:
     lines = f.readlines()
 

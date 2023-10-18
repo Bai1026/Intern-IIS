@@ -2,7 +2,7 @@
 # import json
 # from tqdm import tqdm
 
-# with open("../data_new/source_data/embedding/transR_50.vec.json", "r") as f:
+# with open("../data_new/embedding/transR_50.vec.json", "r") as f:
 #     embeddings = json.load(f)
     
 # # print("Keys in the embeddings:", embeddings.keys())
@@ -37,12 +37,11 @@ import json
 from tqdm import tqdm
 
 # embedding_files = [
-#     "../data_new/source_data/embedding/transE_100.vec.json", "../data_new/source_data/embedding/transE_150.vec.json", "../data_new/source_data/embedding/transE_50.vec.json",
-#     "../data_new/source_data/embedding/transH_100.vec.json", "../data_new/source_data/embedding/transH_150.vec.json", "../data_new/source_data/embedding/transH_50.vec.json",
-#     "../data_new/source_data/embedding/transR_50.vec.json"
+#     "../data_new/embedding/transE_100.vec.json", "../data_new/embedding/transE_150.vec.json", "../data_new/embedding/transE_50.vec.json",
+#     "../data_new/embedding/transH_100.vec.json", "../data_new/embedding/transH_150.vec.json", "../data_new/embedding/transH_50.vec.json"
 # ]
 
-embedding_files = ["../data_new/embedding/transR_50.vec.json"]
+embedding_files = ["../data_new/embedding/transE_150.vec.json"]
 
 embeddings = {}
 for embedding_file in tqdm(embedding_files):
