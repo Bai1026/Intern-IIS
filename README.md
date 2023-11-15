@@ -3,4 +3,4 @@
 - The Lab is led by [Dr. Meng Chang Chen](https://homepage.iis.sinica.edu.tw/pages/mcc/)
 - Mainly doing the **deep learning** and the **cybersecurity** project
 - Including **Audit-log** Project and the **CTI report** project
-- **GNN** is the main focus currently - especially **GAT**
+- **GNN** is the main focus currently - especially **GraphSAGE**
