@@ -15,7 +15,7 @@
     - `./data/ability/ability2triplets.json` 原本一個 AP 只有一筆資料的檔案(新增前)
     - `./data/cate2ioc.json` 置換的 IOC 列表
 - Output: 
-  - `./data/ability/ability2triplets_expand.json` 新增後的攻擊資料（每個 AP 有 1000 筆資料），以 JOSN 格式存
+  - `./data/ability/ability2triplets_expand.json` 新增後的攻擊資料（每個 AP 有 1000 筆資料），以 JSON 格式存
   - `./data/ability/ability2triplets_expand.xlsx` 新增後的攻擊資料（每個 AP 有 1000 筆資料），以 xlsx 格式存
   
 ### 2_combine_atk_benign_triplets_to_one_set.ipynb
