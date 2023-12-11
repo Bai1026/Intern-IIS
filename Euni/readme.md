@@ -10,7 +10,7 @@
 
 ## Expanding Attack Data
 ### 1_expand_atk_dataset.ipynb
-將 167 個 Attack Patterns 新增至 1000 個。
+將 167 個 Attack Patterns 新增至 1000 個(Oversampling)
 - Input: 
     - `./data/ability/ability2triplets.json` 原本一個 AP 只有一筆資料的檔案(新增前)
     - `./data/cate2ioc.json` 置換的 IOC 列表
