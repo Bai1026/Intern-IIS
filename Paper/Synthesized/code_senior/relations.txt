@@ -1,0 +1,27 @@
+Process Create
+Process Start
+CreateFile
+SetBasicInformationFile
+SetDispositionInformationEx
+SetDispositionInformationFile
+WriteFile
+TCP Connect
+TCP Send
+UDP Send
+TCP Disconnect
+RegQueryKey
+RegQueryValue
+CloseFile
+QueryAllInformationFile
+QueryAttributeTagFile
+QueryBasicInformationFile
+QueryDirectory
+QueryNetworkOpenInformationFile
+ReadFile
+TCP Receive
+UDP Receive
+RegCreateKey
+RegSetValue
+RegCloseKey
+RegDeleteValue
+RegOpenKey
